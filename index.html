@@ -441,125 +441,146 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="py-32">
-            <div class="max-w-5xl mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
-                    <div>
-                        <h2 class="text-5xl font-black mb-4">Professional <span
-                                class="text-aws-accent">Experience</span></h2>
-                        <p class="text-xl text-aws-muted">The roadmap of my technical evolution over the years.</p>
-                    </div>
+        <!-- Experience Section: Career Timeline -->
+        <section id="experience" class="py-40 relative overflow-hidden bg-[#0a0f1d]">
+            <!-- Background Decorative Grid -->
+            <div class="absolute inset-0 grid-pattern opacity-5"></div>
+            <div class="absolute top-1/4 -right-20 w-96 h-96 bg-aws-accent/5 blur-[120px] rounded-full"></div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="flex items-center gap-6 mb-24">
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tighter">Career <span
+                            class="text-aws-accent italic">Timeline</span></h2>
+                    <span class="h-px bg-gradient-to-r from-aws-accent/50 to-transparent flex-grow rounded-full"></span>
                 </div>
 
-                <div class="space-y-20 relative">
-                    <!-- Line in background -->
+                <div class="flex flex-col gap-8">
+                    <!-- Item 01: DevsMonkeys -->
                     <div
-                        class="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-aws-accent via-white/5 to-transparent hidden md:block md:left-4">
-                    </div>
-
-                    <!-- Item 1 -->
-                    <div class="relative md:pl-20 group">
+                        class="group relative p-10 md:p-16 glass rounded-[4rem] overflow-hidden transition-all duration-700 hover:bg-white/[0.04] border border-white/5">
+                        <!-- Huge Background Year -->
                         <div
-                            class="absolute -left-2 top-0 w-12 h-12 bg-aws-bg flex items-center justify-center md:left-[-0.45rem] md:top-2">
-                            <div
-                                class="w-5 h-5 rounded-full bg-aws-accent shadow-[0_0_20px_rgba(194,128,255,1)] group-hover:scale-125 transition-transform duration-500">
-                            </div>
-                        </div>
-                        <div class="glass p-10 rounded-[2.5rem] group-hover:bg-white/10 transition-all duration-500">
-                            <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-4 mb-8">
-                                <div>
-                                    <h3 class="text-3xl font-black">PHP Developer</h3>
-                                    <p class="text-aws-accent font-bold text-lg mt-1 tracking-wide">DevsMonkeys</p>
-                                </div>
+                            class="absolute -right-10 -bottom-10 text-[220px] font-black text-white/[0.02] select-none pointer-events-none group-hover:text-aws-accent/[0.05] transition-colors leading-none italic">
+                            2022</div>
+
+                        <div class="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
+                            <div class="lg:w-1/3">
                                 <span
-                                    class="px-6 py-2 glass rounded-full text-sm font-black bg-aws-accent/10 border-aws-accent/20">DEC
-                                    2022 – PRESENT</span>
+                                    class="inline-block px-4 py-2 bg-aws-accent/10 text-aws-accent text-[10px] font-black rounded-xl border border-aws-accent/20 mb-8 uppercase tracking-[0.3em] backdrop-blur-md">Present
+                                    / Active</span>
+                                <h3 class="text-4xl md:text-5xl font-black text-white mb-3">PHP Developer</h3>
+                                <p
+                                    class="text-2xl font-bold text-aws-muted group-hover:text-aws-accent transition-colors duration-500">
+                                    DevsMonkeys</p>
+                                <div class="mt-8 flex flex-wrap gap-2">
+                                    <span
+                                        class="text-[10px] font-black p-2 bg-white/5 rounded-lg text-aws-muted">SaaS</span>
+                                    <span
+                                        class="text-[10px] font-black p-2 bg-white/5 rounded-lg text-aws-muted">Billing</span>
+                                    <span
+                                        class="text-[10px] font-black p-2 bg-white/5 rounded-lg text-aws-muted">API</span>
+                                </div>
                             </div>
-                            <ul class="space-y-4 text-aws-muted text-lg leading-relaxed">
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">01.</span>
-                                    Developed and maintained a scalable SaaS platform for subscription management,
-                                    including core business logic and multi-tenant architecture.
-                                </li>
 
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">02.</span>
-                                    Implemented full payment infrastructure using Stripe and Laravel Cashier, including
-                                    recurring billing, add-ons, webhooks, and failure handling flows.
-                                </li>
-
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">03.</span>
-                                    Designed and developed RESTful APIs for internal and external integrations, ensuring
-                                    reliability, security, and performance under load.
-                                </li>
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">04.</span>
-                                    Optimized application performance and database queries (MySQL), improving response
-                                    times and system stability for high-load scenarios.
-                                </li>
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">05.</span>
-                                    Built internal admin panels and operational tools using Filament, improving workflow
-                                    automation and team efficiency.
-                                </li>
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">06.</span>
-                                    Worked with Docker-based development environments and CI/CD processes to ensure
-                                    consistent deployment and scalability.
-                                </li>
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">07.</span>
-                                    Implemented asynchronous processing (queues, background jobs) for handling payments,
-                                    notifications, and heavy operations.
-                                </li>
-                                <li class="flex gap-4"><span class="text-aws-accent font-bold">08.</span>
-                                    Participated in system architecture design, applying SOLID principles and clean
-                                    architecture for maintainable codebase.
-                                </li>
-                            </ul>
+                            <div class="lg:w-2/3">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                    <div>
+                                        <h4
+                                            class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-6">
+                                            Architectural Impact</h4>
+                                        <ul class="space-y-4 text-aws-muted text-sm font-medium">
+                                            <li class="flex gap-4"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
+                                                Engineered scalable SaaS multi-tenant architectures for subscription
+                                                management.</li>
+                                            <li class="flex gap-4"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
+                                                Implemented Stripe & Laravel Cashier ecosystem for mission-critical
+                                                billing.</li>
+                                            <li class="flex gap-4"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
+                                                Designed high-throughput RESTful APIs ensuring security & reliability.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-6">
+                                            Technical Operations</h4>
+                                        <ul class="space-y-4 text-aws-muted text-sm font-medium">
+                                            <li class="flex gap-4"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
+                                                Optimized MySQL query performance for extreme high-load scenarios.</li>
+                                            <li class="flex gap-4"><span
+                                                    class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
+                                                Managed Docker-based CI/CD workflows and asynchronous job processing.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Item 2 -->
-                    <div class="relative md:pl-20 group opacity-80 hover:opacity-100 transition-opacity">
+                    <!-- Item 02: SOTA -->
+                    <div
+                        class="group relative p-10 md:p-14 glass rounded-[4rem] overflow-hidden transition-all duration-700 hover:bg-white/[0.04] border border-white/5">
                         <div
-                            class="absolute -left-2 top-0 w-12 h-12 bg-aws-bg flex items-center justify-center md:left-[-0.45rem] md:top-2">
-                            <div class="w-5 h-5 rounded-full bg-white/20 border-2 border-aws-accent/30"></div>
-                        </div>
-                        <div class="glass p-10 rounded-[2.5rem] group-hover:bg-white/10 transition-all duration-500">
-                            <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-4 mb-8">
-                                <div>
-                                    <h3 class="text-3xl font-black">Full Stack Developer</h3>
-                                    <p class="text-aws-accent font-bold text-lg mt-1 tracking-wide">SOTA Retail Network
-                                    </p>
-                                </div>
+                            class="absolute -right-10 -bottom-10 text-[220px] font-black text-white/[0.02] select-none pointer-events-none group-hover:text-blue-400/[0.05] transition-colors leading-none italic">
+                            2020</div>
+
+                        <div class="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
+                            <div class="lg:w-1/3">
                                 <span
-                                    class="px-6 py-2 glass rounded-full text-sm font-black bg-white/5 border-white/10">2020</span>
+                                    class="inline-block px-4 py-2 bg-blue-500/10 text-blue-400 text-[10px] font-black rounded-xl border border-blue-500/20 mb-8 uppercase tracking-[0.3em]">Full-Stack</span>
+                                <h3 class="text-4xl font-black text-white mb-3">Software Engineer</h3>
+                                <p
+                                    class="text-2xl font-bold text-aws-muted group-hover:text-blue-400 transition-colors duration-500">
+                                    SOTA Retail Network</p>
                             </div>
-                            <p class="text-aws-muted text-lg leading-relaxed mb-6">
-                                Greenfield e-commerce development on Yii2. Engineered high-availability real-time
-                                synchronization between legacy ERP systems (1C) and modern web storefronts.
-                            </p>
+
+                            <div class="lg:w-2/3">
+                                <p
+                                    class="text-xl text-aws-muted leading-relaxed group-hover:text-white transition-colors">
+                                    Led the greenfield e-commerce development using <span
+                                        class="text-blue-400">Yii2</span>.
+                                    Architected real-time high-load synchronization between legacy ERP systems (1C) and
+                                    modern retail storefronts, optimizing inventory flow for thousands of SKUs.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Item 3 -->
-                    <div class="relative md:pl-20 group opacity-80 hover:opacity-100 transition-opacity">
+                    <!-- Item 03: Upwork -->
+                    <div
+                        class="group relative p-10 md:p-14 glass rounded-[4rem] overflow-hidden transition-all duration-700 hover:bg-white/[0.04] border border-white/5">
                         <div
-                            class="absolute -left-2 top-0 w-12 h-12 bg-aws-bg flex items-center justify-center md:left-[-0.45rem] md:top-2">
-                            <div class="w-5 h-5 rounded-full bg-white/20 border-2 border-aws-accent/30"></div>
-                        </div>
-                        <div class="glass p-10 rounded-[2.5rem] group-hover:bg-white/10 transition-all duration-500">
-                            <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-4 mb-8">
-                                <div>
-                                    <h3 class="text-3xl font-black">Freelance Developer</h3>
-                                    <p class="text-aws-accent font-bold text-lg mt-1 tracking-wide">Upwork</p>
-                                </div>
+                            class="absolute -right-10 -bottom-10 text-[220px] font-black text-white/[0.02] select-none pointer-events-none group-hover:text-orange-400/[0.05] transition-colors leading-none italic">
+                            2012</div>
+
+                        <div class="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
+                            <div class="lg:w-1/3">
                                 <span
-                                    class="px-6 py-2 glass rounded-full text-sm font-black bg-white/5 border-white/10">2012
-                                    – 2022</span>
+                                    class="inline-block px-4 py-2 bg-orange-500/10 text-orange-400 text-[10px] font-black rounded-xl border border-orange-500/20 mb-8 uppercase tracking-[0.3em]">Freelance</span>
+                                <h3 class="text-4xl font-black text-white mb-3">PHP Specialist</h3>
+                                <p
+                                    class="text-2xl font-bold text-aws-muted group-hover:text-orange-400 transition-colors duration-500">
+                                    Global / Upwork</p>
                             </div>
-                            <p class="text-aws-muted text-lg leading-relaxed">
-                                Collaborated with diverse international teams to deliver high-quality web solutions.
-                                Specialized in PHP refactoring and modernizing legacy frontends with Tailwind and Vue.
-                            </p>
+
+                            <div class="lg:w-2/3">
+                                <p
+                                    class="text-xl text-aws-muted leading-relaxed group-hover:text-white transition-colors">
+                                    A decade of delivering high-quality web solutions for international clients.
+                                    Focused on <span class="text-orange-400 font-bold">modernizing legacy
+                                        systems</span>,
+                                    PHP refactoring, and implementing modern frontend stacks (Tailwind & Vue)
+                                    on enterprise-grade projects.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -567,10 +588,10 @@
         <!-- Projects Section -->
         <section id="projects" class="py-32 bg-[#0a0f1d] overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
-                <div class="flex items-center gap-6 mb-20">
-                    <h2 class="text-5xl font-black whitespace-nowrap">My <span class="text-aws-accent">Projects</span>
-                    </h2>
-                    <span class="h-1 bg-white/10 flex-grow rounded-full"></span>
+                <div class="flex items-center gap-6 mb-24">
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tighter">My <span
+                            class="text-aws-accent italic">Projects</span></h2>
+                    <span class="h-px bg-gradient-to-r from-aws-accent/50 to-transparent flex-grow rounded-full"></span>
                 </div>
 
                 <div class="flex flex-col gap-4">
