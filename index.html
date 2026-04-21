@@ -229,113 +229,213 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="py-32 bg-[#0a0f1d]">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-20">
-                    <h2 class="text-5xl font-black mb-6">Technical <span class="text-aws-accent">Stack</span></h2>
-                    <p class="text-xl text-aws-muted max-w-2xl mx-auto">A comprehensive view of the tools and
-                        technologies I use to build world-class software.</p>
+        <!-- Skills Section: Tech Arsenal -->
+        <section id="skills" class="py-32 bg-[#090e1a] overflow-hidden relative">
+            <!-- Background Elements -->
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-aws-accent/5 blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-1/3 h-full bg-blue-500/5 blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-10">
+                    <div class="max-w-2xl">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="w-12 h-px bg-aws-accent"></span>
+                            <span class="text-aws-accent text-xs font-black uppercase tracking-[0.5em]">Inventory</span>
+                        </div>
+                        <h2 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8">
+                            Technical <span
+                                class="bg-gradient-to-r from-aws-accent to-blue-400 bg-clip-text text-transparent pr-4 italic">Skills</span>
+                        </h2>
+                        <p class="text-xl text-aws-muted leading-relaxed">
+                            A battle-tested ecosystem of modern tools and architectural patterns built for scale,
+                            performance, and long-term reliability.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block text-right">
+                        <div class="font-mono text-[10px] text-aws-muted/30 uppercase space-y-1">
+                            <p>System.status: <span class="text-green-500/50 underline">Fully Optimized</span></p>
+                            <p>Environment: Production_Ready</p>
+                            <p>Last_Update: 2026.Q2</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Backend -->
+
+                <!-- The Matrix: Integrated Pillar Layout -->
+                <div
+                    class="relative rounded-[3.5rem] border border-white/5 bg-white/[0.01] backdrop-blur-3xl overflow-hidden">
+                    <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
                     <div
-                        class="group glass p-10 rounded-[2.5rem] hover:ring-2 ring-aws-accent/30 transition-all duration-500">
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/5">
+
+                        <!-- Pillar 01: Core Backend -->
                         <div
-                            class="w-16 h-16 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-8 border border-purple-500/20 group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
+                            class="p-10 md:p-12 hover:bg-white/[0.02] transition-all duration-500 group relative overflow-hidden">
+                            <div
+                                class="absolute -right-4 -top-5 text-7xl font-black text-white/5 select-none pointer-events-none group-hover:text-aws-accent/10 transition-colors duration-700">
+                                CORE</div>
+                            <div class="relative z-10">
+                                <div
+                                    class="w-12 h-12 bg-aws-accent/10 rounded-xl flex items-center justify-center border border-aws-accent/20 mb-10 group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-aws-accent" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">Backend Excellence</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1.5 bg-blue-400/10 rounded-lg text-xs font-bold text-aws-muted border border-blue-400/20 hover:border-aws-accent/30 transition-colors">PHP
+                                        8.3</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-red-500/60 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-aws-accent/30 transition-colors">Laravel
+                                    </span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-aws-accent/30 transition-colors">Yii2</span>
+                                    <span <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-aws-accent/30 transition-colors">MySQL
+                                        / PostgreSQL</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-aws-accent/30 transition-colors">Design
+                                        Patterns</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-aws-accent/30 transition-colors">API
+                                        Architecture</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-aws-accent/10 rounded-lg text-xs font-bold text-aws-accent border border-aws-accent/20">SOLID
+                                        / KISS</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-aws-accent/30 transition-colors">Redis
+                                        / Queues</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-black mb-6">Backend</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-aws-accent rounded-full animate-pulse"></span> PHP (Modern)</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-aws-accent rounded-full opacity-50"></span> Laravel (Expert)</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-aws-accent rounded-full opacity-50"></span> Yii2 / Kohana</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-aws-accent rounded-full opacity-50"></span> API Architecture</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-aws-accent rounded-full opacity-50"></span> MySQL / MSSQL</li>
-                        </ul>
-                    </div>
-                    <!-- Frontend -->
-                    <div
-                        class="group glass p-10 rounded-[2.5rem] hover:ring-2 ring-blue-400/30 transition-all duration-500">
+
+                        <!-- Pillar 02: Dynamic Frontend -->
                         <div
-                            class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-8 border border-blue-500/20 group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v12a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13h16" />
-                            </svg>
+                            class="p-10 md:p-12 hover:bg-white/[0.02] transition-all duration-500 group relative overflow-hidden">
+                            <div
+                                class="absolute -right-4 -top-5 text-7xl font-black text-white/5 select-none pointer-events-none group-hover:text-blue-400/10 transition-colors duration-700">
+                                UI/UX</div>
+                            <div class="relative z-10">
+                                <div
+                                    class="w-12 h-12 bg-blue-400/10 rounded-xl flex items-center justify-center border border-blue-400/20 mb-10 group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">Interactive Layer</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-blue-400/30 transition-colors">React
+                                        / Next.js</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-blue-400/10 rounded-lg text-xs font-bold text-blue-400 border border-blue-400/20">TypeScript
+                                    </span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-blue-400/30 transition-colors">Vue
+                                        3 / Vite</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-blue-400/30 transition-colors">Inertia.js</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-blue-400/30 transition-colors">Tailwind
+                                        CSS</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-blue-400/30 transition-colors">Livewire
+                                        / Alpine</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-blue-400/30 transition-colors">State
+                                        Mgmt</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-black mb-6">Frontend</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-blue-400 rounded-full opacity-50"></span> React / Next.js</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span> Vue 3 / TypeScript
-                            </li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-blue-400 rounded-full opacity-50"></span> Tailwind CSS / SCSS</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-blue-400 rounded-full opacity-50"></span> Alpine.js / Livewire
-                            </li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-blue-400 rounded-full opacity-50"></span> Modern CSS/HTML</li>
-                        </ul>
-                    </div>
-                    <!-- DevOps -->
-                    <div
-                        class="group glass p-10 rounded-[2.5rem] hover:ring-2 ring-green-400/30 transition-all duration-500">
+
+                        <!-- Pillar 03: Infrastructure & Quality -->
                         <div
-                            class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mb-8 border border-green-500/20 group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg>
+                            class="p-10 md:p-12 hover:bg-white/[0.02] transition-all duration-500 group relative overflow-hidden">
+                            <div
+                                class="absolute -right-4 -top-5 text-7xl font-black text-white/5 select-none pointer-events-none group-hover:text-green-400/10 transition-colors duration-700">
+                                OPS</div>
+                            <div class="relative z-10">
+                                <div
+                                    class="w-12 h-12 bg-green-400/10 rounded-xl flex items-center justify-center border border-green-400/20 mb-10 group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">System Reliability</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1.5 bg-green-400/10 rounded-lg text-xs font-bold text-green-400 border border-green-400/20">Docker
+                                        Architecture</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-green-400/30 transition-colors">CI/CD
+                                        (Actions)</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-green-400/30 transition-colors">AWS
+                                        / Digital Ocean</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-green-400/30 transition-colors">PHPUnit
+                                        / Pest</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-green-400/30 transition-colors">Static
+                                        Analysis</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-green-400/30 transition-colors">Linux
+                                        Mastery</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-green-400/30 transition-colors">Sentry
+                                        / Logging</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-black mb-6">Ops & Tools</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Docker Ecosystem
-                            </li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-green-400 rounded-full opacity-50"></span> Linux / Windows</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-green-400 rounded-full opacity-50"></span> Redis / Sphinx</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-green-400 rounded-full opacity-50"></span> Supervisor / Cron</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-green-400 rounded-full opacity-50"></span> CI/CD Basics</li>
-                        </ul>
-                    </div>
-                    <!-- Extra -->
-                    <div
-                        class="group glass p-10 rounded-[2.5rem] hover:ring-2 ring-orange-400/30 transition-all duration-500">
+
+                        <!-- Pillar 04: Business & Specialization -->
                         <div
-                            class="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-8 border border-orange-500/20 group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            class="p-10 md:p-12 hover:bg-white/[0.02] transition-all duration-500 group relative overflow-hidden">
+                            <div
+                                class="absolute -right-4 -top-5 text-7xl font-black text-white/5 select-none pointer-events-none group-hover:text-orange-400/10 transition-colors duration-700">
+                                SPEC</div>
+                            <div class="relative z-10">
+                                <div
+                                    class="w-12 h-12 bg-orange-400/10 rounded-xl flex items-center justify-center border border-orange-400/20 mb-10 group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">SaaS Specialists</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1.5 bg-orange-400/10 rounded-lg text-xs font-bold text-orange-400 border border-orange-400/20">Stripe
+                                        Expert</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-orange-400/30 transition-colors">Security
+                                        Audit</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-orange-400/30 transition-colors">Filament
+                                        Panels</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-orange-400/30 transition-colors">Payment
+                                        Flows</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-orange-400/30 transition-colors">Legacy
+                                        Modernizing</span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-orange-400/30 transition-colors">Git
+                                        Flow / Agile</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-black mb-6">Others</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span> Stripe / Payments
-                            </li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-orange-400 rounded-full opacity-50"></span> Filament Panels</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-orange-400 rounded-full opacity-50"></span> CMS Customization</li>
-                            <li class="flex items-center gap-3 text-aws-muted font-medium"><span
-                                    class="w-2 h-2 bg-orange-400 rounded-full opacity-50"></span> Unit Testing (PEST)
-                            </li>
-                        </ul>
+
                     </div>
                 </div>
             </div>
