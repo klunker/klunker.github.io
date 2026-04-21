@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NJJ58VB4');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NJJ58VB4');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +62,8 @@
 
 <body class="selection:bg-aws-accent/30 selection:text-white">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJJ58VB4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJJ58VB4" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header / Navigation -->
@@ -461,7 +465,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-32 bg-[#0a0f1d]">
+        <section id="projects" class="py-32 bg-[#0a0f1d] overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex items-center gap-6 mb-20">
                     <h2 class="text-5xl font-black whitespace-nowrap">My <span class="text-aws-accent">Projects</span>
@@ -469,227 +473,231 @@
                     <span class="h-1 bg-white/10 flex-grow rounded-full"></span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project: AutoFill Pro (Firefox) -->
-                    <div
-                        class="group glass rounded-[2rem] overflow-hidden hover:ring-2 ring-aws-accent/30 transition-all flex flex-col">
-                        <div class="h-40 bg-aws-bg flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-aws-accent/20 to-orange-500/10"></div>
-                            <div
-                                class="text-3xl font-black text-aws-accent/30 uppercase tracking-tighter group-hover:scale-110 transition-transform duration-700">
-                                AutoFill Pro</div>
+                <div class="flex flex-col gap-4">
+                    <!-- Project 01: SaaS Accountant -->
+                    <article
+                        class="group relative py-12 md:py-16 px-8 md:px-12 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] hover:ring-1 ring-white/10">
+                        <div
+                            class="absolute -right-20 -bottom-20 w-96 h-96 bg-blue-500/10 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                         </div>
-                        <div class="p-8 flex-grow flex flex-col">
-                            <h3 class="text-xl font-black text-white mb-3 tracking-tight">AutoFill Pro (Firefox)</h3>
-                            <p class="text-sm text-aws-muted mb-6 leading-relaxed flex-grow">A modern, privacy-focused extension for intelligent form automation using Manifest V3.</p>
-                            <div
-                                class="flex flex-wrap gap-2 mb-6 uppercase text-[9px] font-black tracking-widest text-aws-accent/80">
-                                <span>TypeScript</span> • <span>MV3</span> • <span>Vite</span>
+                        <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-20">
+                            <div class="flex items-center gap-8 shrink-0">
+                                <span
+                                    class="text-6xl md:text-8xl font-black text-white/5 group-hover:text-blue-400/20 transition-colors duration-500">01</span>
+                                <div
+                                    class="w-16 h-16 md:w-20 md:h-20 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 group-hover:-rotate-12 transition-transform">
+                                    <svg class="w-8 h-8 md:w-10 md:h-10 text-blue-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="flex items-center justify-between border-t border-white/5 pt-5 mt-auto">
-                                <span class="text-[10px] font-bold text-aws-muted uppercase">Productivity</span>
-                                <div class="flex items-center gap-4">
-                                    <a href="projects/autofill-pro.html"
-                                        class="text-xs font-black text-aws-accent hover:underline flex items-center gap-1 group/link">
-                                        View Details
-                                        <svg class="w-3 h-3 group-hover/link:translate-x-1 transition-transform"
+                            <div class="flex-grow">
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-3 py-1 bg-blue-500/10 rounded-full text-[10px] font-black text-blue-400 uppercase tracking-widest border border-blue-500/20">Laravel</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">Stripe</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">Livewire</span>
+                                </div>
+                                <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight">SaaS
+                                    Accounting
+                                    Platform</h3>
+                                <p class="text-aws-muted text-lg max-w-2xl group-hover:text-white/80 transition-colors">
+                                    Full-cycle automation of subscription management, client workflows, and advanced
+                                    billing cycles with deep Stripe API integration.</p>
+                            </div>
+                            <div
+                                class="flex items-center justify-between lg:flex-col lg:items-end gap-6 border-t border-white/5 lg:border-t-0 pt-8 lg:pt-0">
+                                <span
+                                    class="text-xs font-black text-aws-muted uppercase tracking-[0.3em]">Enterprise</span>
+                                <a href="projects/accountant.html"
+                                    class="group/btn relative w-14 h-14 md:w-20 md:h-20 rounded-full bg-blue-500 text-aws-bg flex items-center justify-center overflow-hidden hover:scale-110 transition-transform">
+                                    <div
+                                        class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                    </div>
+                                    <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-blue-500 transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 02: AutoFill Pro -->
+                    <article
+                        class="group relative py-12 md:py-16 px-8 md:px-12 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] hover:ring-1 ring-white/10">
+                        <div
+                            class="absolute -right-20 -top-20 w-96 h-96 bg-aws-accent/10 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                        </div>
+                        <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-20">
+                            <div class="flex items-center gap-8 shrink-0">
+                                <span
+                                    class="text-6xl md:text-8xl font-black text-white/5 group-hover:text-aws-accent/20 transition-colors duration-500">02</span>
+                                <div
+                                    class="w-16 h-16 md:w-20 md:h-20 bg-aws-accent/10 rounded-2xl flex items-center justify-center border border-aws-accent/20 group-hover:rotate-12 transition-transform">
+                                    <svg class="w-8 h-8 md:w-10 md:h-10 text-aws-accent" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-3 py-1 bg-aws-accent/10 rounded-full text-[10px] font-black text-aws-accent uppercase tracking-widest border border-aws-accent/20">TypeScript</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">Vite</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">MV3</span>
+                                </div>
+                                <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight">
+                                    AutoFill Pro
+                                </h3>
+                                <p class="text-aws-muted text-lg max-w-2xl group-hover:text-white/80 transition-colors">
+                                    A
+                                    modern, privacy-focused extension for intelligent form automation. Securely manages
+                                    data locally and matches aliases with extreme precision.</p>
+                            </div>
+                            <div
+                                class="flex items-center justify-between lg:flex-col lg:items-end gap-6 border-t border-white/5 lg:border-t-0 pt-8 lg:pt-0">
+                                <span
+                                    class="text-xs font-black text-aws-muted uppercase tracking-[0.3em]">Productivity</span>
+                                <a href="projects/autofill-pro.html"
+                                    class="group/btn relative w-14 h-14 md:w-20 md:h-20 rounded-full bg-aws-accent text-aws-bg flex items-center justify-center overflow-hidden hover:scale-110 transition-transform">
+                                    <div
+                                        class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                    </div>
+                                    <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-aws-accent transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Row with smaller projects (03, 04) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Project 03: Telecom -->
+                        <article
+                            class="group relative py-12 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04]">
+                            <div class="relative z-10">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-5xl font-black text-white/5 group-hover:text-aws-accent/10 transition-colors">03</span>
+                                    <span
+                                        class="text-[10px] font-black text-aws-muted uppercase tracking-widest mt-2">USA
+                                        Telecom</span>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-black text-white mb-4">Management System</h3>
+                                <p class="text-aws-muted mb-8 line-clamp-2 group-hover:text-aws-text">Custom
+                                    infrastructure for field installers (AT&T/T-Mobile). Focused on security.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex gap-2">
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/5 text-[10px] font-bold">PHP</span>
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/5 text-[10px] font-bold">SQL</span>
+                                    </div>
+                                    <a href="projects/telecom.html"
+                                        class="text-aws-accent font-black text-xs uppercase tracking-widest flex items-center gap-2 group/link">
+                                        Detail <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Project: SaaS Accountant (onliner.pro) -->
-                    <div
-                        class="group glass rounded-[2rem] overflow-hidden hover:ring-2 ring-aws-accent/30 transition-all flex flex-col">
-                        <div class="h-40 bg-aws-bg flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-aws-accent/20 to-blue-500/10"></div>
-                            <div
-                                class="text-3xl font-black text-aws-accent/30 uppercase tracking-tighter group-hover:scale-110 transition-transform duration-700">
-                                Onliner PRO</div>&nbsp;
-                        </div>
-                        <div class="p-8 flex-grow flex flex-col">
-                            <h3 class="text-xl font-black text-white mb-3 tracking-tight">SaaS Accounting Platform</h3>
-                            <p class="text-sm text-aws-muted mb-6 leading-relaxed flex-grow">Automation of subscription
-                                management & client workflows with advanced Stripe integrations.</p>
-                            <div
-                                class="flex flex-wrap gap-2 mb-6 uppercase text-[9px] font-black tracking-widest text-aws-accent/80">
-                                <span>Stripe</span> • <span>Laravel</span> • <span>Livewire</span>
-                            </div>
-                            <div class="flex items-center justify-between border-t border-white/5 pt-5 mt-auto">
-                                <span class="text-[10px] font-bold text-aws-muted uppercase">Enterprise</span>
-                                <div class="flex items-center gap-4">
-                                    <a href="projects/accountant.html"
-                                        class="text-xs font-black text-aws-accent hover:underline flex items-center gap-1 group/link">
-                                        View Details
-                                        <svg class="w-3 h-3 group-hover/link:translate-x-1 transition-transform"
+                        </article>
+
+                        <!-- Project 04: Learning -->
+                        <article
+                            class="group relative py-12 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04]">
+                            <div class="relative z-10">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-5xl font-black text-white/5 group-hover:text-aws-accent/10 transition-colors">04</span>
+                                    <span
+                                        class="text-[10px] font-black text-aws-muted uppercase tracking-widest mt-2">Education</span>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-black text-white mb-4">Special Learning</h3>
+                                <p class="text-aws-muted mb-8 line-clamp-2 group-hover:text-aws-text">Kohana-based
+                                    e-learning system with video library and testing modules.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex gap-2">
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/5 text-[10px] font-bold">KOH</span>
+                                        <span
+                                            class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/5 text-[10px] font-bold">JS</span>
+                                    </div>
+                                    <a href="projects/special-learning.html"
+                                        class="text-aws-accent font-black text-xs uppercase tracking-widest flex items-center gap-2 group/link">
+                                        Detail <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
 
-                    <!-- Project: Telecom (USA) -->
-                    <div
-                        class="group glass rounded-[2rem] overflow-hidden hover:ring-2 ring-aws-accent/30 transition-all flex flex-col">
-                        <div class="h-40 bg-aws-bg flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent"></div>
-                            <div class="text-3xl font-black text-aws-accent/30 tracking-tighter">Telecom</div>
-                        </div>
-                        <div class="p-8 flex-grow flex flex-col">
-                            <h3 class="text-xl font-black text-white mb-3 tracking-tight">Management (USA Telecom)</h3>
-                            <p class="text-sm text-aws-muted mb-6 leading-relaxed flex-grow">Custom system for field
-                                installers (AT&T/T-Mobile). Database architect & security specialist.</p>
-                            <div
-                                class="flex flex-wrap gap-2 mb-6 uppercase text-[9px] font-black tracking-widest text-aws-accent/80">
-                                <span>PHP</span> • <span>Encrypt</span> • <span>MySQL</span>
-                            </div>
-                            <div class="flex items-center justify-between border-t border-white/5 pt-5 mt-auto">
-                                <span class="text-[10px] font-bold text-aws-muted uppercase">Infrastructure</span>
-                                <a href="projects/telecom.html"
-                                    class="text-xs font-black text-aws-accent hover:underline flex items-center gap-1 group/link">
-                                    View Details
-                                    <svg class="w-3 h-3 group-hover/link:translate-x-1 transition-transform" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Row with projects 05, 06, 07 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <!-- Project 05: Believe -->
+                        <article
+                            class="group relative py-10 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] border border-white/5">
+                            <span class="text-4xl font-black text-white/5 mb-6 block">05</span>
+                            <h3 class="text-xl font-black text-white mb-2">Believe App</h3>
+                            <p class="text-sm text-aws-muted mb-6">Stripe optimization for React platform.</p>
+                            <a href="projects/believe.html"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-aws-accent hover:bg-aws-accent hover:text-aws-bg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </article>
 
-                    <!-- Project: Special Learning -->
-                    <div
-                        class="group glass rounded-[2rem] overflow-hidden hover:ring-2 ring-aws-accent/30 transition-all flex flex-col">
-                        <div class="h-40 bg-aws-bg flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-aws-accent/10 to-transparent"></div>
-                            <div class="text-3xl font-black text-aws-accent/30 tracking-tighter">LEARNING</div>
-                        </div>
-                        <div class="p-8 flex-grow flex flex-col">
-                            <h3 class="text-xl font-black text-white mb-3 tracking-tight">Special Learning Platform</h3>
-                            <p class="text-sm text-aws-muted mb-6 leading-relaxed flex-grow">Kohana-based e-learning
-                                system with video CE library and testing integrations.</p>
-                            <div
-                                class="flex flex-wrap gap-2 mb-6 uppercase text-[9px] font-black tracking-widest text-aws-accent/80">
-                                <span>Kohana</span> • <span>JQuery</span> • <span>MySQL</span>
-                            </div>
-                            <div class="flex items-center justify-between border-t border-white/5 pt-5 mt-auto">
-                                <span class="text-[10px] font-bold text-aws-muted uppercase">Education</span>
-                                <a href="projects/special-learning.html"
-                                    class="text-xs font-black text-aws-accent hover:underline flex items-center gap-1 group/link">
-                                    View Details
-                                    <svg class="w-3 h-3 group-hover/link:translate-x-1 transition-transform" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                        <!-- Project 06: SilenceMap -->
+                        <article
+                            class="group relative py-10 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] border border-white/5">
+                            <span class="text-4xl font-black text-white/5 mb-6 block">06</span>
+                            <h3 class="text-xl font-black text-white mb-2">SilenceMap</h3>
+                            <p class="text-sm text-aws-muted mb-6">Acoustic urban mapping with React.</p>
+                            <a href="projects/silencemap.html"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-aws-accent hover:bg-aws-accent hover:text-aws-bg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </article>
 
-                    <!-- Project: Believe -->
-                    <div
-                        class="group glass rounded-[2rem] overflow-hidden hover:ring-2 ring-aws-accent/30 transition-all flex flex-col">
-                        <div class="h-40 bg-aws-bg flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent"></div>
-                            <div
-                                class="text-3xl font-black text-aws-accent/30 tracking-tight group-hover:scale-110 transition-transform">
-                                Believe</div>&nbsp;
-                        </div>
-                        <div class="p-8 flex-grow flex flex-col">
-                            <h3 class="text-xl font-black text-white mb-3 tracking-tight">Believe Hypnosis App</h3>
-                            <p class="text-sm text-aws-muted mb-6 leading-relaxed flex-grow">Stripe optimization and
-                                frontend performance tuning for a React-based platform.</p>
-                            <div
-                                class="flex flex-wrap gap-2 mb-6 uppercase text-[9px] font-black tracking-widest text-aws-accent/80">
-                                <span>React</span> • <span>Stripe</span> • <span>Performance</span>
-                            </div>
-                            <div class="flex items-center justify-between border-t border-white/5 pt-5 mt-auto">
-                                <span class="text-[10px] font-bold text-aws-muted uppercase">Wellness</span>
-                                <div class="flex items-center gap-4">
-                                    <a href="projects/believe.html"
-                                        class="text-xs font-black text-aws-accent hover:underline flex items-center gap-1 group/link">
-                                        View Details
-                                        <svg class="w-3 h-3 group-hover/link:translate-x-1 transition-transform"
-                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project: SilenceMap -->
-                    <div
-                        class="group glass rounded-[2rem] overflow-hidden hover:ring-2 ring-aws-accent/30 transition-all flex flex-col">
-                        <div class="h-40 bg-aws-bg flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-400/5 to-transparent"></div>
-                            <div class="text-3xl font-black text-aws-accent/30 tracking-tight">SilenceMap</div>
-                        </div>
-                        <div class="p-8 flex-grow flex flex-col">
-                            <h3 class="text-xl font-black text-white mb-3 tracking-tight">SilenceMap</h3>
-                            <p class="text-sm text-aws-muted mb-6 leading-relaxed flex-grow">Noise-aware routing app for
-                                acoustic urban mapping with React and TypeScript.</p>
-                            <div
-                                class="flex flex-wrap gap-2 mb-6 uppercase text-[9px] font-black tracking-widest text-aws-accent/80">
-                                <span>React</span> • <span>TS</span> • <span>Acoustics</span>
-                            </div>
-                            <div class="flex items-center justify-between border-t border-white/5 pt-5 mt-auto">
-                                <span class="text-[10px] font-bold text-aws-muted uppercase">Public</span>
-                                <a href="projects/silencemap.html"
-                                    class="text-xs font-black text-aws-accent hover:underline flex items-center gap-1 group/link">
-                                    View Details
-                                    <svg class="w-3 h-3 group-hover/link:translate-x-1 transition-transform" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project: Kohana-Icecat -->
-                    <div
-                        class="group glass rounded-[2rem] overflow-hidden hover:ring-2 ring-aws-accent/30 transition-all flex flex-col">
-                        <div class="h-40 bg-aws-bg flex items-center justify-center relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-orange-500/7 to-transparent"></div>
-                            <div
-                                class="text-3xl font-black text-aws-accent/30 tracking-tight group-hover:-rotate-3 transition-transform">
-                                Icecat</div>
-                        </div>
-                        <div class="p-8 flex-grow flex flex-col">
-                            <h3 class="text-xl font-black text-white mb-3 tracking-tight">Kohana-Icecat</h3>
-                            <p class="text-sm text-aws-muted mb-6 leading-relaxed flex-grow">High-performance
-                                integration middleware for the IceCat product data catalog.</p>
-                            <div
-                                class="flex flex-wrap gap-2 mb-6 uppercase text-[9px] font-black tracking-widest text-aws-accent/80">
-                                <span>PHP</span> • <span>Kohana</span> • <span>API</span>
-                            </div>
-                            <div class="flex items-center justify-between border-t border-white/5 pt-5 mt-auto">
-                                <span class="text-[10px] font-bold text-aws-muted uppercase">Integration</span>
-                                <a href="projects/kohana-icecat.html"
-                                    class="text-xs font-black text-aws-accent hover:underline flex items-center gap-1 group/link">
-                                    View Details
-                                    <svg class="w-3 h-3 group-hover/link:translate-x-1 transition-transform" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                        <!-- Project 07: Icecat -->
+                        <article
+                            class="group relative py-10 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] border border-white/5">
+                            <span class="text-4xl font-black text-white/5 mb-6 block">07</span>
+                            <h3 class="text-xl font-black text-white mb-2">Kohana-Icecat</h3>
+                            <p class="text-sm text-aws-muted mb-6">High-performance integration middleware.</p>
+                            <a href="projects/kohana-icecat.html"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-aws-accent hover:bg-aws-accent hover:text-aws-bg transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -781,11 +789,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BDZXCQXQF"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-7BDZXCQXQF');
+        gtag('config', 'G-7BDZXCQXQF');
     </script>
 </body>
 
