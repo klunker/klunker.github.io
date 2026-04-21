@@ -177,52 +177,142 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-32 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid lg:grid-cols-2 gap-20 items-center">
-                    <div>
-                        <h2 class="text-4xl font-black mb-10 flex items-center gap-4">
-                            <span class="w-12 h-1.5 bg-aws-accent rounded-full"></span>
-                            Professional Summary
+        <!-- About Section: High-Resolution Profile -->
+        <section id="about" class="py-40 relative overflow-hidden bg-[#0a0f1d]">
+            <!-- Decorative Elements -->
+            <div class="absolute bottom-0 right-0 w-1/2 h-1/2 bg-aws-accent/5 blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <!-- SEO Hidden/Semantic Text Layer -->
+                <div class="sr-only">
+                    <h2>Professional Summary</h2>
+                    <p>Specialized in backend architecture using PHP (8+), Laravel, and RESTful APIs with a strong focus
+                        on clean architecture, SOLID principles, and long-term maintainability.</p>
+                    <p>Experienced in building subscription-based systems, complex billing logic, and secure payment
+                        integrations (Stripe, PayPal) including webhooks, metered billing, and add-on models.</p>
+                    <p>Proven ability to optimize application performance, refactor legacy systems, and design database
+                        structures for scalability and reliability. Skilled in Docker-based development environments and
+                        modern full-stack workflows with React, Vue.js, and Livewire.</p>
+                    <p>Adhering to SOLID, DRY, and KISS principles is at the core of my development philosophy.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-16 items-start">
+
+                    <!-- Left: Detailed Summary -->
+                    <div class="lg:col-span-7">
+                        <div class="flex items-center gap-3 mb-8">
+                            <span class="w-8 h-px bg-aws-accent"></span>
+                            <span class="text-aws-accent text-xs font-black uppercase tracking-[0.5em]">About</span>
+                        </div>
+
+                        <h2 class="text-4xl md:text-6xl font-black tracking-tighter mb-12 italic">
+                            Architecture <br> & <span class="text-aws-accent">Stability</span>
                         </h2>
-                        <div class="space-y-6 text-xl leading-relaxed text-aws-muted">
-                            <p>Specialized in backend architecture using PHP (8+), Laravel, and RESTful APIs with a
-                                strong focus on clean architecture, SOLID principles, and long-term maintainability.
-                            </p>
-                            <p>Experienced in building subscription-based systems, complex billing logic, and secure
-                                payment integrations (Stripe, PayPal) including webhooks, metered billing, and add-on
-                                models.
-                            </p>
-                            <p>Proven ability to optimize application performance, refactor legacy systems, and design
-                                database structures for scalability and reliability. Skilled in Docker-based development
-                                environments and modern full-stack workflows with React, Vue.js, and Livewire.
-                            </p>
-                            <p class="text-aws-text">
-                                Adhering to <span class="text-aws-accent">SOLID</span>, <span
-                                    class="text-aws-accent">DRY</span>, and <span class="text-aws-accent">KISS</span>
-                                principles is at the core of my development philosophy.
-                            </p>
+
+                        <div class="space-y-8">
+                            <!-- Integrated Summary Block -->
+                            <div
+                                class="relative p-10 rounded-[3rem] bg-white/[0.02] border border-white/5 backdrop-blur-3xl group hover:border-aws-accent/30 transition-all duration-500 overflow-hidden">
+                                <div class="absolute top-0 right-0 p-4 opacity-2 pointer-events-none">
+                                    <svg class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                                    </svg>
+                                </div>
+
+                                <div class="relative z-10">
+                                    <p
+                                        class="text-xl md:text-2xl leading-loose text-aws-muted group-hover:text-white transition-colors duration-500">
+                                        I build <span class="text-white font-bold">Resilient Systems</span> that bridge
+                                        complex business logic with high-performance code. My focus is on creating <span
+                                            class="text-aws-accent font-black">Scalable SaaS Architectures</span> that
+                                        are as maintainable as they are powerful.
+                                    </p>
+
+                                    <!-- Embedded SEO Sub-text (Visible but styled as metadata) -->
+                                    <div
+                                        class="mt-8 pt-8 border-t border-white/5 text-sm text-white/30 space-y-4 max-w-xl">
+                                        <p>Expertise includes subscription lifecycles, complex billing logic, and secure
+                                            payment integrations (Stripe/PayPal) with full webhook & metered billing
+                                            support.</p>
+                                        <div class="flex flex-wrap gap-4 font-mono text-[10px] uppercase">
+                                            <span class="text-aws-accent">SOLID Framework</span>
+                                            <span>Docker-Ready</span>
+                                            <span>Database Scaling</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div
+                                    class="p-8 rounded-3xl bg-white/[0.01] border border-white/5 hover:bg-white/[0.03] transition-colors">
+                                    <h4
+                                        class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-4 text-aws-accent">
+                                        Principles</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-aws-accent/5 border border-aws-accent/20 rounded-lg text-[10px] font-black text-aws-accent">SOLID</span>
+                                        <span
+                                            class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-[10px] font-black text-aws-muted">DRY</span>
+                                        <span
+                                            class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-[10px] font-black text-aws-muted">KISS</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="p-8 rounded-3xl bg-white/[0.01] border border-white/5 flex flex-col justify-center">
+                                    <div class="flex items-center gap-4">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/20">
+                                            <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                                        </div>
+                                        <div>
+                                            <div
+                                                class="text-xs font-black text-white uppercase tracking-widest leading-none">
+                                                Ready for Tasks</div>
+                                            <div class="text-[10px] text-aws-muted mt-1">Available for Senior Roles
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="glass p-8 rounded-3xl text-center hover:bg-white/10 transition-colors">
-                            <h3 class="text-4xl font-black text-aws-accent mb-2">Opole</h3>
-                            <p class="text-sm text-aws-muted uppercase font-bold">Location</p>
+
+                    <!-- Right: Quick Metrics -->
+                    <div class="lg:col-span-5 grid grid-cols-2 gap-4 lg:mt-32">
+                        <div
+                            class="group p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:bg-aws-accent/[0.03] hover:border-aws-accent/30 transition-all duration-500 text-center">
+                            <div class="text-3xl font-black text-white mb-2 tracking-tighter">Opole</div>
+                            <div class="text-[10px] text-aws-accent font-black uppercase tracking-widest">Base / Poland
+                            </div>
                         </div>
-                        <div class="glass p-8 rounded-3xl text-center hover:bg-white/10 transition-colors">
-                            <h3 class="text-4xl font-black text-aws-accent mb-2">Stripe</h3>
-                            <p class="text-sm text-aws-muted uppercase font-bold">Payments Expert</p>
+
+                        <div
+                            class="group p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:bg-blue-400/[0.03] hover:border-blue-400/30 transition-all duration-500 text-center">
+                            <div class="text-3xl font-black text-white mb-2 tracking-tighter">Stripe</div>
+                            <div class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Payments Expert
+                            </div>
                         </div>
-                        <div class="glass p-8 rounded-3xl text-center hover:bg-white/10 transition-colors group">
-                            <h3
-                                class="text-4xl font-black text-aws-accent mb-2 group-hover:scale-110 transition-transform">
-                                99+</h3>
-                            <p class="text-sm text-aws-muted uppercase font-bold">Speed Score</p>
+
+                        <div
+                            class="group p-8 rounded-[3rem] bg-white/[0.02] border border-white/5 hover:bg-green-400/[0.03] hover:border-green-400/30 transition-all duration-500 text-center col-span-2 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 p-4 opacity-10">
+                                <svg class="w-16 h-16 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                                </svg>
+                            </div>
+                            <div class="text-5xl md:text-6xl font-black text-white mb-2 tracking-tighter">100%</div>
+                            <div class="text-[10px] text-green-400 font-black uppercase tracking-widest">Architecture
+                                Fidelity / SOLID Focus</div>
                         </div>
-                        <div class="glass p-8 rounded-3xl text-center hover:bg-white/10 transition-colors">
-                            <h3 class="text-4xl font-black text-aws-accent mb-2">SaaS</h3>
-                            <p class="text-sm text-aws-muted uppercase font-bold">Domain Focus</p>
+
+                        <div
+                            class="group p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:bg-orange-400/[0.03] hover:border-orange-400/30 transition-all duration-500 text-center col-span-2">
+                            <div class="text-3xl font-black text-white mb-1 tracking-tighter">Enterprise</div>
+                            <div class="text-[10px] text-orange-400 font-black uppercase tracking-widest">Scalability &
+                                High Load Focus</div>
                         </div>
                     </div>
                 </div>
