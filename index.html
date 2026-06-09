@@ -89,26 +89,43 @@
 
             <!-- Desktop Nav -->
             <ul class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <li><a href="#about" class="text-aws-muted hover:text-aws-accent transition-colors">About</a></li>
-                <li><a href="#skills" class="text-aws-muted hover:text-aws-accent transition-colors">Skills</a></li>
-                <li><a href="#experience" class="text-aws-muted hover:text-aws-accent transition-colors">Experience</a>
+                <li><a href="#about" class="text-aws-muted hover:text-aws-accent transition-colors" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" class="text-aws-muted hover:text-aws-accent transition-colors" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" class="text-aws-muted hover:text-aws-accent transition-colors" data-i18n="nav.experience">Experience</a>
                 </li>
-                <li><a href="#projects" class="text-aws-muted hover:text-aws-accent transition-colors">Projects</a></li>
+                <li><a href="#projects" class="text-aws-muted hover:text-aws-accent transition-colors" data-i18n="nav.projects">Projects</a></li>
                 <li><a href="#contact"
-                        class="px-4 py-2 bg-aws-accent text-aws-bg rounded-lg font-bold hover:brightness-110 transition-all">Contact</a>
+                        class="px-4 py-2 bg-aws-accent text-aws-bg rounded-lg font-bold hover:brightness-110 transition-all" data-i18n="nav.contact">Contact</a>
                 </li>
             </ul>
+
+            <!-- Language Switcher Desktop -->
+            <div class="hidden md:flex items-center gap-1 ml-2 border-l border-white/10 pl-4">
+                <button data-lang-btn="en" class="text-xs font-bold text-aws-muted hover:text-aws-accent transition-colors px-1">EN</button>
+                <span class="text-white/20 text-xs">|</span>
+                <button data-lang-btn="pl" class="text-xs font-bold text-aws-muted hover:text-aws-accent transition-colors px-1">PL</button>
+                <span class="text-white/20 text-xs">|</span>
+                <button data-lang-btn="uk" class="text-xs font-bold text-aws-muted hover:text-aws-accent transition-colors px-1">UA</button>
+            </div>
         </nav>
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu"
             class="hidden md:hidden absolute top-full left-0 right-0 glass border-t-0 p-6 flex flex-col space-y-4 animate-in fade-in slide-in-from-top-4 duration-300">
-            <a href="#about" class="text-aws-text font-medium py-2 border-b border-white/5">About</a>
-            <a href="#skills" class="text-aws-text font-medium py-2 border-b border-white/5">Skills</a>
-            <a href="#experience" class="text-aws-text font-medium py-2 border-b border-white/5">Experience</a>
-            <a href="#projects" class="text-aws-text font-medium py-2 border-b border-white/5">Projects</a>
+            <a href="#about" class="text-aws-text font-medium py-2 border-b border-white/5" data-i18n="nav.about">About</a>
+            <a href="#skills" class="text-aws-text font-medium py-2 border-b border-white/5" data-i18n="nav.skills">Skills</a>
+            <a href="#experience" class="text-aws-text font-medium py-2 border-b border-white/5" data-i18n="nav.experience">Experience</a>
+            <a href="#projects" class="text-aws-text font-medium py-2 border-b border-white/5" data-i18n="nav.projects">Projects</a>
             <a href="#contact"
-                class="bg-aws-accent text-aws-bg p-3 rounded-lg text-center font-bold mt-4 shadow-lg shadow-aws-accent/10">Contact</a>
+                class="bg-aws-accent text-aws-bg p-3 rounded-lg text-center font-bold mt-4 shadow-lg shadow-aws-accent/10" data-i18n="nav.contact">Contact</a>
+            <!-- Language Switcher Mobile -->
+            <div class="flex items-center justify-center gap-3 pt-2 border-t border-white/5">
+                <button data-lang-btn="en" class="text-sm font-bold text-aws-muted hover:text-aws-accent transition-colors">EN</button>
+                <span class="text-white/20">|</span>
+                <button data-lang-btn="pl" class="text-sm font-bold text-aws-muted hover:text-aws-accent transition-colors">PL</button>
+                <span class="text-white/20">|</span>
+                <button data-lang-btn="uk" class="text-sm font-bold text-aws-muted hover:text-aws-accent transition-colors">UA</button>
+            </div>
         </div>
     </header>
 
@@ -120,20 +137,20 @@
                 <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
                     <div class="flex-1 text-center md:text-left">
                         <span
-                            class="inline-block px-4 py-1.5 bg-aws-accent/10 text-aws-accent text-sm font-semibold rounded-full border border-aws-accent/20 mb-8 animate-pulse">
+                            class="inline-block px-4 py-1.5 bg-aws-accent/10 text-aws-accent text-sm font-semibold rounded-full border border-aws-accent/20 mb-8 animate-pulse" data-i18n="hero.badge">
                             Exploring Now
                         </span>
                         <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tight leading-[1.1]">
-                            Andrii.Che <br class="hidden md:block"> <span
-                                class="bg-gradient-to-r from-aws-accent to-blue-400 bg-clip-text text-transparent">Developer</span>
+                            <span data-i18n="hero.title.line1">Andrii.Che</span> <br class="hidden md:block"> <span
+                                class="bg-gradient-to-r from-aws-accent to-blue-400 bg-clip-text text-transparent" data-i18n="hero.title.line2">Developer</span>
                         </h1>
-                        <p class="text-xl md:text-2xl text-aws-muted mb-10 max-w-2xl leading-relaxed">
+                        <p class="text-xl md:text-2xl text-aws-muted mb-10 max-w-2xl leading-relaxed" data-i18n="hero.subtitle">
                             Senior Full-stack PHP Developer based in Opole, Poland.
                             Specialize in building scalable SaaS architectures with 7+ years of professional expertise.
                         </p>
                         <div class="flex flex-wrap justify-center md:justify-start gap-4">
                             <a href="#contact"
-                                class="px-10 py-5 bg-aws-accent text-aws-bg font-black rounded-2xl shadow-xl shadow-aws-accent/20 hover:scale-[1.03] transition-all hover:brightness-110">
+                                class="px-10 py-5 bg-aws-accent text-aws-bg font-black rounded-2xl shadow-xl shadow-aws-accent/20 hover:scale-[1.03] transition-all hover:brightness-110" data-i18n="hero.cta">
                                 Get in Touch
                             </a>
                             <a href="https://linkedin.com/in/andrii-cherepkov-13436221" target="_blank"
@@ -142,7 +159,7 @@
                                     <path
                                         d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                                 </svg>
-                                LinkedIn Profile
+                                <span data-i18n="hero.linkedin">LinkedIn Profile</span>
                             </a>
                         </div>
                     </div>
@@ -167,8 +184,8 @@
                             <!-- Small badge floating -->
                             <div
                                 class="absolute -bottom-6 -right-6 glass p-6 rounded-3xl shadow-2xl animate-bounce duration-3000">
-                                <p class="text-aws-accent font-black text-3xl">7+</p>
-                                <p class="text-xs text-aws-muted uppercase font-bold tracking-widest">Years Experience
+                                <p class="text-aws-accent font-black text-3xl" data-i18n="hero.years.value">7+</p>
+                                <p class="text-xs text-aws-muted uppercase font-bold tracking-widest" data-i18n="hero.years.label">Years Experience
                                 </p>
                             </div>
                         </div>
@@ -202,11 +219,11 @@
                     <div class="lg:col-span-7">
                         <div class="flex items-center gap-3 mb-8">
                             <span class="w-8 h-px bg-aws-accent"></span>
-                            <span class="text-aws-accent text-xs font-black uppercase tracking-[0.5em]">About</span>
+                            <span class="text-aws-accent text-xs font-black uppercase tracking-[0.5em]" data-i18n="about.label">About</span>
                         </div>
 
                         <h2 class="text-4xl md:text-6xl font-black tracking-tighter mb-12 italic">
-                            Architecture <br> & <span class="text-aws-accent">Stability</span>
+                            <span data-i18n="about.title.line1">Architecture</span> <br> & <span class="text-aws-accent" data-i18n="about.title.line2">Stability</span>
                         </h2>
 
                         <div class="space-y-8">
@@ -222,7 +239,7 @@
 
                                 <div class="relative z-10">
                                     <p
-                                        class="text-xl md:text-2xl leading-loose text-aws-muted group-hover:text-white transition-colors duration-500">
+                                        class="text-xl md:text-2xl leading-loose text-aws-muted group-hover:text-white transition-colors duration-500" data-i18n-html="about.summary">
                                         I build <span class="text-white font-bold">Resilient Systems</span> that bridge
                                         complex business logic with high-performance code. My focus is on creating <span
                                             class="text-aws-accent font-black">Scalable SaaS Architectures</span> that
@@ -232,7 +249,7 @@
                                     <!-- Embedded SEO Sub-text (Visible but styled as metadata) -->
                                     <div
                                         class="mt-8 pt-8 border-t border-white/5 text-sm text-white/30 space-y-4 max-w-xl">
-                                        <p>Expertise includes subscription lifecycles, complex billing logic, and secure
+                                        <p data-i18n="about.subtext">Expertise includes subscription lifecycles, complex billing logic, and secure
                                             payment integrations (Stripe/PayPal) with full webhook & metered billing
                                             support.</p>
                                         <div class="flex flex-wrap gap-4 font-mono text-[10px] uppercase">
@@ -248,7 +265,7 @@
                                 <div
                                     class="p-8 rounded-3xl bg-white/[0.01] border border-white/5 hover:bg-white/[0.03] transition-colors">
                                     <h4
-                                        class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-4 text-aws-accent">
+                                        class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-4 text-aws-accent" data-i18n="about.principles">
                                         Principles</h4>
                                     <div class="flex flex-wrap gap-2">
                                         <span
@@ -268,9 +285,9 @@
                                         </div>
                                         <div>
                                             <div
-                                                class="text-xs font-black text-white uppercase tracking-widest leading-none">
+                                                class="text-xs font-black text-white uppercase tracking-widest leading-none" data-i18n="about.ready.title">
                                                 Ready for Tasks</div>
-                                            <div class="text-[10px] text-aws-muted mt-1">Available for Senior Roles
+                                            <div class="text-[10px] text-aws-muted mt-1" data-i18n="about.ready.subtitle">Available for Senior Roles
                                             </div>
                                         </div>
                                     </div>
@@ -283,15 +300,15 @@
                     <div class="lg:col-span-5 grid grid-cols-2 gap-4 lg:mt-32">
                         <div
                             class="group p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:bg-aws-accent/[0.03] hover:border-aws-accent/30 transition-all duration-500 text-center">
-                            <div class="text-3xl font-black text-white mb-2 tracking-tighter">Laravel</div>
-                            <div class="text-[10px] text-aws-accent font-black uppercase tracking-widest">Base Framework
+                            <div class="text-3xl font-black text-white mb-2 tracking-tighter" data-i18n="about.metric.laravel">Laravel</div>
+                            <div class="text-[10px] text-aws-accent font-black uppercase tracking-widest" data-i18n="about.metric.laravel.label">Base Framework
                             </div>
                         </div>
 
                         <div
                             class="group p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:bg-blue-400/[0.03] hover:border-blue-400/30 transition-all duration-500 text-center">
-                            <div class="text-3xl font-black text-white mb-2 tracking-tighter">Stripe</div>
-                            <div class="text-[10px] text-blue-400 font-black uppercase tracking-widest">Payments Expert
+                            <div class="text-3xl font-black text-white mb-2 tracking-tighter" data-i18n="about.metric.stripe">Stripe</div>
+                            <div class="text-[10px] text-blue-400 font-black uppercase tracking-widest" data-i18n="about.metric.stripe.label">Payments Expert
                             </div>
                         </div>
 
@@ -303,15 +320,15 @@
                                         d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
                                 </svg>
                             </div>
-                            <div class="text-5xl md:text-6xl font-black text-white mb-2 tracking-tighter">100%</div>
-                            <div class="text-[10px] text-green-400 font-black uppercase tracking-widest">Architecture
+                            <div class="text-5xl md:text-6xl font-black text-white mb-2 tracking-tighter" data-i18n="about.metric.fidelity">100%</div>
+                            <div class="text-[10px] text-green-400 font-black uppercase tracking-widest" data-i18n="about.metric.fidelity.label">Architecture
                                 Fidelity / SOLID Focus</div>
                         </div>
 
                         <div
                             class="group p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:bg-orange-400/[0.03] hover:border-orange-400/30 transition-all duration-500 text-center col-span-2">
-                            <div class="text-3xl font-black text-white mb-1 tracking-tighter">Enterprise</div>
-                            <div class="text-[10px] text-orange-400 font-black uppercase tracking-widest">Scalability &
+                            <div class="text-3xl font-black text-white mb-1 tracking-tighter" data-i18n="about.metric.enterprise">Enterprise</div>
+                            <div class="text-[10px] text-orange-400 font-black uppercase tracking-widest" data-i18n="about.metric.enterprise.label">Scalability &
                                 High Load Focus</div>
                         </div>
                     </div>
@@ -330,22 +347,22 @@
                     <div class="max-w-2xl">
                         <div class="flex items-center gap-3 mb-6">
                             <span class="w-12 h-px bg-aws-accent"></span>
-                            <span class="text-aws-accent text-xs font-black uppercase tracking-[0.5em]">Inventory</span>
+                            <span class="text-aws-accent text-xs font-black uppercase tracking-[0.5em]" data-i18n="skills.label">Inventory</span>
                         </div>
-                        <h2 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8">
+                        <h2 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8" data-i18n-html="skills.title">
                             Technical <span
                                 class="bg-gradient-to-r from-aws-accent to-blue-400 bg-clip-text text-transparent pr-4 italic">Skills</span>
                         </h2>
-                        <p class="text-xl text-aws-muted leading-relaxed">
+                        <p class="text-xl text-aws-muted leading-relaxed" data-i18n="skills.desc">
                             A battle-tested ecosystem of modern tools and architectural patterns built for scale,
                             performance, and long-term reliability.
                         </p>
                     </div>
                     <div class="hidden lg:block text-right">
                         <div class="font-mono text-[10px] text-aws-muted/30 uppercase space-y-1">
-                            <p>System.status: <span class="text-green-500/50 underline">Fully Optimized</span></p>
-                            <p>Environment: Production_Ready</p>
-                            <p>Last_Update: 2026.Q2</p>
+                            <p data-i18n-html="system.status">System.status: <span class="text-green-500/50 underline">Fully Optimized</span></p>
+                            <p data-i18n="system.env">Environment: Production_Ready</p>
+                            <p data-i18n="system.update">Last_Update: 2026.Q2</p>
                         </div>
                     </div>
                 </div>
@@ -373,7 +390,7 @@
                                             d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">Backend Excellence</h3>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight" data-i18n="skills.pillar1.title">Backend Excellence</h3>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="px-3 py-1.5 bg-blue-400/10 rounded-lg text-xs font-bold text-aws-muted border border-blue-400/20 hover:border-aws-accent/30 transition-colors">PHP
@@ -419,7 +436,7 @@
                                             d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">Interactive Layer</h3>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight" data-i18n="skills.pillar2.title">Interactive Layer</h3>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="px-3 py-1.5 bg-white/5 rounded-lg text-xs font-bold text-aws-muted border border-white/5 hover:border-blue-400/30 transition-colors">React
@@ -460,7 +477,7 @@
                                             d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">System Reliability</h3>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight" data-i18n="skills.pillar3.title">System Reliability</h3>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="px-3 py-1.5 bg-green-400/10 rounded-lg text-xs font-bold text-green-400 border border-green-400/20">Docker
@@ -502,7 +519,7 @@
                                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight">SaaS Specialists</h3>
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight" data-i18n="skills.pillar4.title">SaaS Specialists</h3>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="px-3 py-1.5 bg-orange-400/10 rounded-lg text-xs font-bold text-orange-400 border border-orange-400/20">Stripe
@@ -539,7 +556,7 @@
 
             <div class="max-w-7xl mx-auto px-6 relative z-10">
                 <div class="flex items-center gap-6 mb-24">
-                    <h2 class="text-4xl md:text-6xl font-black tracking-tighter">Career <span
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tighter" data-i18n-html="experience.title">Career <span
                             class="text-aws-accent italic">Timeline</span></h2>
                     <span class="h-px bg-gradient-to-r from-aws-accent/50 to-transparent flex-grow rounded-full"></span>
                 </div>
@@ -556,11 +573,11 @@
                         <div class="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
                             <div class="lg:w-1/3">
                                 <span
-                                    class="inline-block px-4 py-2 bg-aws-accent/10 text-aws-accent text-[10px] font-black rounded-xl border border-aws-accent/20 mb-8 uppercase tracking-[0.3em] backdrop-blur-md">Present
+                                    class="inline-block px-4 py-2 bg-aws-accent/10 text-aws-accent text-[10px] font-black rounded-xl border border-aws-accent/20 mb-8 uppercase tracking-[0.3em] backdrop-blur-md" data-i18n="experience.job1.badge">Present
                                     / Active</span>
-                                <h3 class="text-4xl md:text-5xl font-black text-white mb-3">PHP Developer</h3>
+                                <h3 class="text-4xl md:text-5xl font-black text-white mb-3" data-i18n="experience.job1.title">PHP Developer</h3>
                                 <p
-                                    class="text-2xl font-bold text-aws-muted group-hover:text-aws-accent transition-colors duration-500">
+                                    class="text-2xl font-bold text-aws-muted group-hover:text-aws-accent transition-colors duration-500" data-i18n="experience.job1.company">
                                     DevsMonkeys</p>
                                 <div class="mt-8 flex flex-wrap gap-2">
                                     <span
@@ -576,34 +593,35 @@
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                                     <div>
                                         <h4
-                                            class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-6">
+                                            class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-6" data-i18n="experience.job1.col1.title">
                                             Architectural Impact</h4>
                                         <ul class="space-y-4 text-aws-muted text-sm font-medium">
                                             <li class="flex gap-4"><span
                                                     class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
-                                                Engineered scalable SaaS multi-tenant architectures for subscription
-                                                management.</li>
+                                                <span data-i18n="experience.job1.col1.item1">Engineered scalable SaaS multi-tenant architectures for subscription management.</span>
+                                            </li>
                                             <li class="flex gap-4"><span
                                                     class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
-                                                Implemented Stripe & Laravel Cashier ecosystem for mission-critical
-                                                billing.</li>
+                                                <span data-i18n="experience.job1.col1.item2">Implemented Stripe & Laravel Cashier ecosystem for mission-critical billing.</span>
+                                            </li>
                                             <li class="flex gap-4"><span
                                                     class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
-                                                Designed high-throughput RESTful APIs ensuring security & reliability.
+                                                <span data-i18n="experience.job1.col1.item3">Designed high-throughput RESTful APIs ensuring security & reliability.</span>
                                             </li>
                                         </ul>
                                     </div>
                                     <div>
                                         <h4
-                                            class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-6">
+                                            class="text-[10px] font-black text-white/30 uppercase tracking-[0.4em] mb-6" data-i18n="experience.job1.col2.title">
                                             Technical Operations</h4>
                                         <ul class="space-y-4 text-aws-muted text-sm font-medium">
                                             <li class="flex gap-4"><span
                                                     class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
-                                                Optimized MySQL query performance for extreme high-load scenarios.</li>
+                                                <span data-i18n="experience.job1.col2.item1">Optimized MySQL query performance for extreme high-load scenarios.</span>
+                                            </li>
                                             <li class="flex gap-4"><span
                                                     class="w-1.5 h-1.5 rounded-full bg-aws-accent mt-1.5 shrink-0"></span>
-                                                Managed Docker-based CI/CD workflows and asynchronous job processing.
+                                                <span data-i18n="experience.job1.col2.item2">Managed Docker-based CI/CD workflows and asynchronous job processing.</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -622,16 +640,16 @@
                         <div class="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
                             <div class="lg:w-1/3">
                                 <span
-                                    class="inline-block px-4 py-2 bg-blue-500/10 text-blue-400 text-[10px] font-black rounded-xl border border-blue-500/20 mb-8 uppercase tracking-[0.3em]">Full-Stack</span>
-                                <h3 class="text-4xl font-black text-white mb-3">Software Engineer</h3>
+                                    class="inline-block px-4 py-2 bg-blue-500/10 text-blue-400 text-[10px] font-black rounded-xl border border-blue-500/20 mb-8 uppercase tracking-[0.3em]" data-i18n="experience.job2.badge">Full-Stack</span>
+                                <h3 class="text-4xl font-black text-white mb-3" data-i18n="experience.job2.title">Software Engineer</h3>
                                 <p
-                                    class="text-2xl font-bold text-aws-muted group-hover:text-blue-400 transition-colors duration-500">
+                                    class="text-2xl font-bold text-aws-muted group-hover:text-blue-400 transition-colors duration-500" data-i18n="experience.job2.company">
                                     SOTA Retail Network</p>
                             </div>
 
                             <div class="lg:w-2/3">
                                 <p
-                                    class="text-xl text-aws-muted leading-relaxed group-hover:text-white transition-colors">
+                                    class="text-xl text-aws-muted leading-relaxed group-hover:text-white transition-colors" data-i18n-html="experience.job2.desc">
                                     Led the greenfield e-commerce development using <span
                                         class="text-blue-400">Yii2</span>.
                                     Architected real-time high-load synchronization between legacy ERP systems (1C) and
@@ -651,16 +669,16 @@
                         <div class="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
                             <div class="lg:w-1/3">
                                 <span
-                                    class="inline-block px-4 py-2 bg-orange-500/10 text-orange-400 text-[10px] font-black rounded-xl border border-orange-500/20 mb-8 uppercase tracking-[0.3em]">Freelance</span>
-                                <h3 class="text-4xl font-black text-white mb-3">PHP Specialist</h3>
+                                    class="inline-block px-4 py-2 bg-orange-500/10 text-orange-400 text-[10px] font-black rounded-xl border border-orange-500/20 mb-8 uppercase tracking-[0.3em]" data-i18n="experience.job3.badge">Freelance</span>
+                                <h3 class="text-4xl font-black text-white mb-3" data-i18n="experience.job3.title">PHP Specialist</h3>
                                 <p
-                                    class="text-2xl font-bold text-aws-muted group-hover:text-orange-400 transition-colors duration-500">
+                                    class="text-2xl font-bold text-aws-muted group-hover:text-orange-400 transition-colors duration-500" data-i18n="experience.job3.company">
                                     Global / Upwork</p>
                             </div>
 
                             <div class="lg:w-2/3">
                                 <p
-                                    class="text-xl text-aws-muted leading-relaxed group-hover:text-white transition-colors">
+                                    class="text-xl text-aws-muted leading-relaxed group-hover:text-white transition-colors" data-i18n-html="experience.job3.desc">
                                     A decade of delivering high-quality web solutions for international clients.
                                     Focused on <span class="text-orange-400 font-bold">modernizing legacy
                                         systems</span>,
@@ -679,7 +697,7 @@
         <section id="projects" class="py-32 bg-[#0a0f1d] overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex items-center gap-6 mb-24">
-                    <h2 class="text-4xl md:text-6xl font-black tracking-tighter">My <span
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tighter" data-i18n-html="projects.title">My <span
                             class="text-aws-accent italic">Projects</span></h2>
                     <span class="h-px bg-gradient-to-r from-aws-accent/50 to-transparent flex-grow rounded-full"></span>
                 </div>
@@ -713,17 +731,17 @@
                                     <span
                                         class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">Livewire</span>
                                 </div>
-                                <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight">SaaS
+                                <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight" data-i18n="projects.project1.title">SaaS
                                     Accounting
                                     Platform</h3>
-                                <p class="text-aws-muted text-lg max-w-2xl group-hover:text-white/80 transition-colors">
+                                <p class="text-aws-muted text-lg max-w-2xl group-hover:text-white/80 transition-colors" data-i18n="projects.project1.desc">
                                     Full-cycle automation of subscription management, client workflows, and advanced
                                     billing cycles with deep Stripe API integration.</p>
                             </div>
                             <div
                                 class="flex items-center justify-between lg:flex-col lg:items-end gap-6 border-t border-white/5 lg:border-t-0 pt-8 lg:pt-0">
                                 <span
-                                    class="text-xs font-black text-aws-muted uppercase tracking-[0.3em]">Enterprise</span>
+                                    class="text-xs font-black text-aws-muted uppercase tracking-[0.3em]" data-i18n="projects.enterprise">Enterprise</span>
                                 <a href="projects/accountant.html"
                                     class="group/btn relative w-14 h-14 md:w-20 md:h-20 rounded-full bg-blue-500 text-aws-bg flex items-center justify-center overflow-hidden hover:scale-110 transition-transform">
                                     <div
@@ -739,7 +757,60 @@
                         </div>
                     </article>
 
-                    <!-- Project 02: AutoFill Pro -->
+                    <!-- Project 02: Bawidełka -->
+                    <article
+                        class="group relative py-12 md:py-16 px-8 md:px-12 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] hover:ring-1 ring-white/10">
+                        <div
+                            class="absolute -right-20 -bottom-20 w-96 h-96 bg-green-500/10 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                        </div>
+                        <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-20">
+                            <div class="flex items-center gap-8 shrink-0">
+                                <span
+                                    class="text-6xl md:text-8xl font-black text-white/5 group-hover:text-green-400/20 transition-colors duration-500">02</span>
+                                <div
+                                    class="w-16 h-16 md:w-20 md:h-20 bg-green-500/10 rounded-2xl flex items-center justify-center border border-green-500/20 group-hover:-rotate-12 transition-transform">
+                                    <svg class="w-8 h-8 md:w-10 md:h-10 text-green-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.794 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.794 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.206 18 16.5 18s-3.332.477-4.5 1.253" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-3 py-1 bg-green-500/10 rounded-full text-[10px] font-black text-green-400 uppercase tracking-widest border border-green-500/20">Laravel</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">React.js</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">MySQL</span>
+                                </div>
+                                <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight" data-i18n="projects.project2.title">Bawidełka
+                                </h3>
+                                <p class="text-aws-muted text-lg max-w-2xl group-hover:text-white/80 transition-colors" data-i18n="projects.project2.desc">
+                                    Bawidełka is a creative space for children, founded in Opole in 2021 by Anita Kołek. The company focuses on fostering children's creativity, learning through experience, and organizing leisure activities.
+                                </p>
+                            </div>
+                            <div
+                                class="flex items-center justify-between lg:flex-col lg:items-end gap-6 border-t border-white/5 lg:border-t-0 pt-8 lg:pt-0">
+                                <span
+                                    class="text-xs font-black text-aws-muted uppercase tracking-[0.3em] text-right" data-i18n="projects.corporate">Corporate Website</span>
+                                <a href="projects/bawidelka.html"
+                                    class="group/btn relative w-14 h-14 md:w-20 md:h-20 rounded-full bg-green-500 text-aws-bg flex items-center justify-center overflow-hidden hover:scale-110 transition-transform">
+                                    <div
+                                        class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                    </div>
+                                    <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-green-500 transition-colors"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 03: AutoFill Pro -->
                     <article
                         class="group relative py-12 md:py-16 px-8 md:px-12 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] hover:ring-1 ring-white/10">
                         <div
@@ -748,7 +819,7 @@
                         <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-20">
                             <div class="flex items-center gap-8 shrink-0">
                                 <span
-                                    class="text-6xl md:text-8xl font-black text-white/5 group-hover:text-aws-accent/20 transition-colors duration-500">02</span>
+                                    class="text-6xl md:text-8xl font-black text-white/5 group-hover:text-aws-accent/20 transition-colors duration-500">03</span>
                                 <div
                                     class="w-16 h-16 md:w-20 md:h-20 bg-aws-accent/10 rounded-2xl flex items-center justify-center border border-aws-accent/20 group-hover:rotate-12 transition-transform">
                                     <svg class="w-8 h-8 md:w-10 md:h-10 text-aws-accent" fill="none"
@@ -767,10 +838,10 @@
                                     <span
                                         class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-black text-aws-muted uppercase tracking-widest border border-white/5">MV3</span>
                                 </div>
-                                <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight">
+                                <h3 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight" data-i18n="projects.project3.title">
                                     AutoFill Pro
                                 </h3>
-                                <p class="text-aws-muted text-lg max-w-2xl group-hover:text-white/80 transition-colors">
+                                <p class="text-aws-muted text-lg max-w-2xl group-hover:text-white/80 transition-colors" data-i18n="projects.project3.desc">
                                     A
                                     modern, privacy-focused extension for intelligent form automation. Securely manages
                                     data locally and matches aliases with extreme precision.</p>
@@ -778,7 +849,7 @@
                             <div
                                 class="flex items-center justify-between lg:flex-col lg:items-end gap-6 border-t border-white/5 lg:border-t-0 pt-8 lg:pt-0">
                                 <span
-                                    class="text-xs font-black text-aws-muted uppercase tracking-[0.3em]">Productivity</span>
+                                    class="text-xs font-black text-aws-muted uppercase tracking-[0.3em]" data-i18n="projects.productivity">Productivity</span>
                                 <a href="projects/autofill-pro.html"
                                     class="group/btn relative w-14 h-14 md:w-20 md:h-20 rounded-full bg-aws-accent text-aws-bg flex items-center justify-center overflow-hidden hover:scale-110 transition-transform">
                                     <div
@@ -797,19 +868,19 @@
 
                     <!-- Row with smaller projects (03, 04) -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <!-- Project 03: Telecom -->
+                        <!-- Project 04: Telecom -->
                         <article
                             class="group relative py-12 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04]">
                             <div class="relative z-10">
                                 <div class="flex justify-between items-start mb-8">
                                     <span
-                                        class="text-5xl font-black text-white/5 group-hover:text-aws-accent/10 transition-colors">03</span>
+                                        class="text-5xl font-black text-white/5 group-hover:text-aws-accent/10 transition-colors">04</span>
                                     <span
                                         class="text-[10px] font-black text-aws-muted uppercase tracking-widest mt-2">USA
                                         Telecom</span>
                                 </div>
-                                <h3 class="text-2xl md:text-3xl font-black text-white mb-4">Management System</h3>
-                                <p class="text-aws-muted mb-8 line-clamp-2 group-hover:text-aws-text">Custom
+                                <h3 class="text-2xl md:text-3xl font-black text-white mb-4" data-i18n="projects.project4.title">Management System</h3>
+                                <p class="text-aws-muted mb-8 line-clamp-2 group-hover:text-aws-text" data-i18n="projects.project4.desc">Custom
                                     infrastructure for field installers (AT&T/T-Mobile). Focused on security.</p>
                                 <div class="flex items-center justify-between">
                                     <div class="flex gap-2">
@@ -820,7 +891,7 @@
                                     </div>
                                     <a href="projects/telecom.html"
                                         class="text-aws-accent font-black text-xs uppercase tracking-widest flex items-center gap-2 group/link">
-                                        Detail <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                                        <span data-i18n="projects.detail">Detail</span> <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -830,18 +901,18 @@
                             </div>
                         </article>
 
-                        <!-- Project 04: Learning -->
+                        <!-- Project 05: Learning -->
                         <article
                             class="group relative py-12 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04]">
                             <div class="relative z-10">
                                 <div class="flex justify-between items-start mb-8">
                                     <span
-                                        class="text-5xl font-black text-white/5 group-hover:text-aws-accent/10 transition-colors">04</span>
+                                        class="text-5xl font-black text-white/5 group-hover:text-aws-accent/10 transition-colors">05</span>
                                     <span
                                         class="text-[10px] font-black text-aws-muted uppercase tracking-widest mt-2">Education</span>
                                 </div>
-                                <h3 class="text-2xl md:text-3xl font-black text-white mb-4">Special Learning</h3>
-                                <p class="text-aws-muted mb-8 line-clamp-2 group-hover:text-aws-text">Kohana-based
+                                <h3 class="text-2xl md:text-3xl font-black text-white mb-4" data-i18n="projects.project5.title">Special Learning</h3>
+                                <p class="text-aws-muted mb-8 line-clamp-2 group-hover:text-aws-text" data-i18n="projects.project5.desc">Kohana-based
                                     e-learning system with video library and testing modules.</p>
                                 <div class="flex items-center justify-between">
                                     <div class="flex gap-2">
@@ -852,7 +923,7 @@
                                     </div>
                                     <a href="projects/special-learning.html"
                                         class="text-aws-accent font-black text-xs uppercase tracking-widest flex items-center gap-2 group/link">
-                                        Detail <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                                        <span data-i18n="projects.detail">Detail</span> <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -865,12 +936,12 @@
 
                     <!-- Row with projects 05, 06, 07 -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <!-- Project 05: Believe -->
+                        <!-- Project 06: Believe -->
                         <article
                             class="group relative py-10 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] border border-white/5">
-                            <span class="text-4xl font-black text-white/5 mb-6 block">05</span>
-                            <h3 class="text-xl font-black text-white mb-2">Believe App</h3>
-                            <p class="text-sm text-aws-muted mb-6">Stripe optimization for React platform.</p>
+                            <span class="text-4xl font-black text-white/5 mb-6 block">06</span>
+                            <h3 class="text-xl font-black text-white mb-2" data-i18n="projects.project6.title">Believe App</h3>
+                            <p class="text-sm text-aws-muted mb-6" data-i18n="projects.project6.desc">Stripe optimization for React platform.</p>
                             <a href="projects/believe.html"
                                 class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-aws-accent hover:bg-aws-accent hover:text-aws-bg transition-colors">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -880,12 +951,12 @@
                             </a>
                         </article>
 
-                        <!-- Project 06: SilenceMap -->
+                        <!-- Project 07: SilenceMap -->
                         <article
                             class="group relative py-10 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] border border-white/5">
-                            <span class="text-4xl font-black text-white/5 mb-6 block">06</span>
-                            <h3 class="text-xl font-black text-white mb-2">SilenceMap</h3>
-                            <p class="text-sm text-aws-muted mb-6">Acoustic urban mapping with React.</p>
+                            <span class="text-4xl font-black text-white/5 mb-6 block">07</span>
+                            <h3 class="text-xl font-black text-white mb-2" data-i18n="projects.project7.title">SilenceMap</h3>
+                            <p class="text-sm text-aws-muted mb-6" data-i18n="projects.project7.desc">Acoustic urban mapping with React.</p>
                             <a href="projects/silencemap.html"
                                 class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-aws-accent hover:bg-aws-accent hover:text-aws-bg transition-colors">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -895,12 +966,12 @@
                             </a>
                         </article>
 
-                        <!-- Project 07: Icecat -->
+                        <!-- Project 08: Icecat -->
                         <article
                             class="group relative py-10 px-8 glass rounded-[3rem] overflow-hidden transition-all duration-500 hover:bg-white/[0.04] border border-white/5">
-                            <span class="text-4xl font-black text-white/5 mb-6 block">07</span>
-                            <h3 class="text-xl font-black text-white mb-2">Kohana-Icecat</h3>
-                            <p class="text-sm text-aws-muted mb-6">High-performance integration middleware.</p>
+                            <span class="text-4xl font-black text-white/5 mb-6 block">08</span>
+                            <h3 class="text-xl font-black text-white mb-2" data-i18n="projects.project8.title">Kohana-Icecat</h3>
+                            <p class="text-sm text-aws-muted mb-6" data-i18n="projects.project8.desc">High-performance integration middleware.</p>
                             <a href="projects/kohana-icecat.html"
                                 class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-aws-accent hover:bg-aws-accent hover:text-aws-bg transition-colors">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -920,11 +991,11 @@
         <section id="contact" class="py-40 relative">
             <div class="absolute inset-0 hero-gradient opacity-20 pointer-events-none"></div>
             <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-                <h2 class="text-6xl md:text-8xl font-black mb-12 tracking-tight">Ready to <br> <span
-                        class="text-aws-accent">Collaborate?</span></h2>
+                <h2 class="text-6xl md:text-8xl font-black mb-12 tracking-tight"><span data-i18n="contact.title.line1">Ready to</span> <br> <span
+                        class="text-aws-accent" data-i18n="contact.title.line2">Collaborate?</span></h2>
                 <div class="flex flex-col items-center gap-8">
                     <span id="email"
-                        class="text-xl md:text-5xl font-black hover:text-aws-accent transition-all duration-300 decoration-aws-accent/30 decoration-3 md:decoration-8 underline-offset-[12px] underline">
+                        class="text-xl md:text-5xl font-black hover:text-aws-accent transition-all duration-300 decoration-aws-accent/30 decoration-3 md:decoration-8 underline-offset-[12px] underline" data-i18n="contact.email">
                         Get Email Address</span>
 
                     <script>
@@ -942,7 +1013,7 @@
                                 <path
                                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
-                            LinkedIn
+                            <span data-i18n="contact.linkedin">LinkedIn</span>
                         </a>
                     </div>
                 </div>
@@ -952,18 +1023,18 @@
 
     <footer class="py-20 bg-black/40 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
-            <p class="text-aws-muted font-bold tracking-widest text-xs uppercase">
+            <p class="text-aws-muted font-bold tracking-widest text-xs uppercase" data-i18n="footer.copyright">
                 &copy; 2024 Andrii.Che. Crafted for visual excellence.
             </p>
             <div class="flex gap-10">
                 <a href="#about"
-                    class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors">About</a>
+                    class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors" data-i18n="footer.about">About</a>
                 <a href="#skills"
-                    class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors">Skills</a>
+                    class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors" data-i18n="footer.skills">Skills</a>
                 <a href="#projects"
-                    class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors">Projects</a>
+                    class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors" data-i18n="footer.projects">Projects</a>
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-                    class="text-xs font-black uppercase tracking-widest text-aws-accent hover:underline">Back to Top
+                    class="text-xs font-black uppercase tracking-widest text-aws-accent hover:underline" data-i18n="footer.back">Back to Top
                     &uarr;</button>
             </div>
         </div>
@@ -1006,6 +1077,8 @@
 
         gtag('config', 'G-7BDZXCQXQF');
     </script>
+
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>
