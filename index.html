@@ -79,7 +79,14 @@
             .interact-btn:active {
                 @apply scale-95;
             }
-            /* Respect reduced motion */
+            /* Active nav link state */
+            .nav-link-active {
+                @apply text-accent font-black;
+            }
+            .nav-link-active::after {
+                content: '';
+                @apply absolute -bottom-1 left-0 w-full h-[1px] bg-accent;
+            }
             @media (prefers-reduced-motion: reduce) {
                 .reveal,
                 .interact-card,
@@ -171,13 +178,11 @@
 
             <!-- Desktop Nav -->
             <ul class="hidden lg:flex items-center space-x-8 text-xs font-black uppercase tracking-widest">
-                <li><a href="#about" class="text-editor-muted hover:text-accent transition-colors" data-i18n="nav.about">About</a></li>
-                <li><a href="#skills" class="text-editor-muted hover:text-accent transition-colors" data-i18n="nav.skills">Skills</a></li>
-                <li><a href="#experience" class="text-editor-muted hover:text-accent transition-colors" data-i18n="nav.experience">Experience</a></li>
-                <li><a href="#projects" class="text-editor-muted hover:text-accent transition-colors" data-i18n="nav.projects">Projects</a></li>
-                <li><a href="#contact"
-                        class="px-5 py-2 bg-accent text-white rounded-full font-black hover:bg-editor-ink transition-all" data-i18n="nav.contact">Contact</a>
-                </li>
+                <li><a href="#about" class="nav-link text-editor-muted hover:text-accent transition-colors relative" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" class="nav-link text-editor-muted hover:text-accent transition-colors relative" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link text-editor-muted hover:text-accent transition-colors relative" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link text-editor-muted hover:text-accent transition-colors relative" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link text-editor-muted hover:text-accent transition-colors relative px-5 py-2 rounded-full" data-i18n="nav.contact">Contact</a></li>
             </ul>
 
             <!-- Language Switcher Desktop -->
@@ -193,12 +198,11 @@
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu"
             class="hidden lg:hidden absolute top-full left-0 right-0 bg-white border-b border-editor-border p-6 flex flex-col space-y-4 animate-in fade-in slide-in-from-top-4 duration-300 z-50">
-            <a href="#about" class="text-editor-ink font-black py-2 border-b border-editor-border/50 uppercase text-xs tracking-widest" data-i18n="nav.about">About</a>
-            <a href="#skills" class="text-editor-ink font-black py-2 border-b border-editor-border/50 uppercase text-xs tracking-widest" data-i18n="nav.skills">Skills</a>
-            <a href="#experience" class="text-editor-ink font-black py-2 border-b border-editor-border/50 uppercase text-xs tracking-widest" data-i18n="nav.experience">Experience</a>
-            <a href="#projects" class="text-editor-ink font-black py-2 border-b border-editor-border/50 uppercase text-xs tracking-widest" data-i18n="nav.projects">Projects</a>
-            <a href="#contact"
-                class="bg-accent text-white p-3 rounded-full text-center font-black mt-4 shadow-lg" data-i18n="nav.contact">Contact</a>
+            <a href="#about" class="nav-link text-editor-muted hover:text-accent transition-colors uppercase text-xs tracking-widest border-b border-editor-border/50 py-2" data-i18n="nav.about">About</a>
+            <a href="#skills" class="nav-link text-editor-muted hover:text-accent transition-colors uppercase text-xs tracking-widest border-b border-editor-border/50 py-2" data-i18n="nav.skills">Skills</a>
+            <a href="#experience" class="nav-link text-editor-muted hover:text-accent transition-colors uppercase text-xs tracking-widest border-b border-editor-border/50 py-2" data-i18n="nav.experience">Experience</a>
+            <a href="#projects" class="nav-link text-editor-muted hover:text-accent transition-colors uppercase text-xs tracking-widest border-b border-editor-border/50 py-2" data-i18n="nav.projects">Projects</a>
+            <a href="#contact" class="nav-link text-editor-muted hover:text-accent transition-colors uppercase text-xs tracking-widest py-2 mt-4" data-i18n="nav.contact">Contact</a>
             <div class="flex items-center justify-center gap-3 pt-2 border-t border-editor-border/50">
                 <button data-lang-btn="en" class="text-sm font-black text-editor-muted hover:text-accent transition-colors">EN</button>
                 <span class="text-editor-muted/30">|</span>
@@ -1473,7 +1477,7 @@
                                     <svg class="w-10 h-10 md:w-12 md:h-12 text-accent" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                            d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 002-2v2a2 2 0 002 2z" />
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                     </svg>
                                 </div>
                             </div>
@@ -1697,7 +1701,10 @@
                 header.classList.add('py-6');
             }
         });
+    </script>
 
+    <!-- GSAP + ScrollTrigger reveal animations, section pinning, scroll spy, mobile menu -->
+    <script>
         // Reveal on scroll — GSAP ScrollTrigger
         if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             gsap.registerPlugin(ScrollTrigger);
@@ -1724,19 +1731,51 @@
                 pin: true,
                 pinSpacing: true,
             });
+
+            // Scroll spy: highlight active nav link
+            const sections = ['about', 'skills', 'experience', 'projects', 'contact'];
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            function updateActiveLink() {
+                let current = '';
+                sections.forEach(id => {
+                    const section = document.getElementById(id);
+                    if (section) {
+                        const rect = section.getBoundingClientRect();
+                        if (rect.top <= window.innerHeight * 0.35 && rect.bottom >= window.innerHeight * 0.35) {
+                            current = id;
+                        }
+                    }
+                });
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+                    current = 'contact';
+                }
+                navLinks.forEach(link => {
+                    link.classList.remove('nav-link-active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('nav-link-active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveLink);
+            window.addEventListener('load', updateActiveLink);
+            updateActiveLink();
         }
 
         // Mobile menu logic
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
-        });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
 
         // Experience timeline accordion (exclusive)
         const experienceItems = document.querySelectorAll('#experience details');
@@ -1749,6 +1788,7 @@
             });
         });
     </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BDZXCQXQF"></script>
     <script>
