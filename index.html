@@ -13,7 +13,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrii.Che| Senior PHP Developer</title>
+    <title>Andrii Cherepkov| Senior PHP Developer</title>
     <link rel="icon" type="image/svg+xml" href="https://builder.aws.com/assets/builder-favicon-sq0js-4n.svg" />
 
     <!-- Google Fonts: Inter + Playfair Display for editorial headings -->
@@ -46,6 +46,9 @@
             }
             html {
                 @apply scroll-smooth;
+            }
+            h1, h2, h3, h4 {
+                @apply font-black tracking-tighter;
             }
         }
 
@@ -209,39 +212,34 @@
     <main>
         <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center pt-24 bg-editor-bg overflow-hidden">
-            <!-- Scroll-controlled canvas gradient mesh -->
-            <canvas id="heroMesh" class="absolute inset-0 z-[-1] opacity-40 w-full h-full"></canvas>
+            <!-- Ambient glow -->
+            <div class="absolute inset-0 z-[-1]">
+                <div class="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px]"></div>
+                <div class="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]"></div>
+            </div>
             <div class="max-w-6xl mx-auto px-6 relative z-10 w-full">
-                <div class="flex flex-col md:flex-row items-end gap-16 xl:gap-24 mb-20">
+                <div class="flex flex-col md:flex-row items-start gap-20 xl:gap-32 mb-24">
                     <div class="flex-1 min-w-0">
-                        <div class="flex items-center gap-3 mb-10">
+                        <div class="flex items-center gap-3 mb-12">
                             <span class="w-8 h-[1px] bg-accent"></span>
-                            <span class="text-accent text-xs font-black uppercase tracking-[0.6em]" data-i18n="hero.badge">Exploring Now</span>
+                            <span class="text-accent text-xs font-black uppercase tracking-[0.8em]" data-i18n="hero.badge">Exploring Now</span>
                         </div>
-                        <h1 class="serif text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-10 text-balance">
-                            <span data-i18n="hero.title.line1">Andrii.Che</span>
+                        <h1 class="serif text-5xl md:text-7xl lg:text-8xl font-black leading-[0.92] mb-8 text-balance">
+                            <span data-i18n="hero.title.line1">Andrii Cherepkov</span>
                             <br>
-                            <span class="text-accent italic" data-i18n="hero.title.line2">Developer</span>
+                            <span class="text-accent italic text-4xl md:text-5xl lg:text-6xl" data-i18n="hero.title.line2">Developer</span>
                         </h1>
-                        <p class="text-lg md:text-xl text-editor-muted mb-6 max-w-xl leading-relaxed text-balance" data-i18n="hero.subtitle">
+                        <p class="text-lg md:text-xl text-editor-muted mb-10 max-w-xl leading-relaxed text-balance" data-i18n="hero.subtitle">
                             Senior Full-stack PHP Developer based in Opole, Poland.
                             Specialize in building scalable SaaS architectures with 7+ years of professional expertise.
                         </p>
-                        <div class="flex flex-wrap gap-3 mb-12">
-                            <span class="px-3 py-1.5 bg-accent/5 text-accent rounded-full border border-accent/10 text-xs font-black uppercase tracking-widest">PHP</span>
-                            <span class="px-3 py-1.5 bg-red-50 text-red-700 rounded-full border border-red-100 text-xs font-black uppercase tracking-widest">Laravel</span>
-                            <span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full border border-blue-100 text-xs font-black uppercase tracking-widest">React</span>
-                            <span class="px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-full border border-indigo-100 text-xs font-black uppercase tracking-widest">Filament</span>
-                            <span class="px-3 py-1.5 bg-yellow-50 text-yellow-700 rounded-full border border-yellow-100 text-xs font-black uppercase tracking-widest">JavaScript</span>
-                            <span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full border border-blue-100 text-xs font-black uppercase tracking-widest">TypeScript</span>
-                        </div>
                         <div class="flex flex-wrap gap-6">
                             <a href="#contact"
-                                class="px-8 py-4 bg-accent text-white font-black rounded-full shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/20 transition-all duration-300" data-i18n="hero.cta">
+                                class="px-9 py-4.5 bg-accent text-white font-black rounded-full shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/20 transition-all duration-300 interact-btn" data-i18n="hero.cta">
                                 Get in Touch
                             </a>
                             <a href="https://linkedin.com/in/andrii-cherepkov-13436221" target="_blank"
-                                class="px-8 py-4 bg-white border border-editor-border text-editor-ink font-black rounded-full hover:bg-editor-ink hover:text-white transition-all flex items-center gap-3">
+                                class="px-9 py-4.5 bg-white border border-editor-border text-editor-ink font-black rounded-full hover:bg-editor-ink hover:text-white transition-all flex items-center gap-3 interact-btn">
                                 <svg class="w-5 h-5 text-[#0077b5] group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                                     <path
                                         d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -302,7 +300,6 @@
                                 <span class="h-2 w-2 rounded-full bg-indigo-500"></span>
                                 <span class="text-[10px] font-black uppercase tracking-widest">Filament</span>
                             </div>
-
                             <!-- Years badge -->
                             <div class="absolute -bottom-6 -right-4 rounded-2xl border border-editor-border bg-white/95 p-5 shadow-xl shadow-black/10 backdrop-blur transition-transform duration-500 group-hover:-translate-y-1">
                                 <p class="text-accent font-black text-3xl" data-i18n="hero.years.value">7+</p>
@@ -1661,7 +1658,7 @@
     <footer class="py-24 bg-white border-t border-editor-border/50">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
             <p class="text-editor-muted font-medium tracking-widest text-[11px] uppercase" data-i18n="footer.copyright">
-                &copy; 2024 Andrii.Che. Crafted for visual excellence.
+                &copy; 2024 Andrii Cherepkov. Crafted for visual excellence.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 md:justify-end">
                 <a href="#about"
@@ -1743,69 +1740,6 @@
             });
         });
     </script>
-
-    <!-- Hero mesh canvas (lightweight, scroll-controlled) -->
-    <script>
-        (function () {
-            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            const canvas = document.getElementById('heroMesh');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-            let width, height, offset = 0;
-
-            function resize() {
-                width = canvas.width = canvas.offsetWidth;
-                height = canvas.height = canvas.offsetHeight;
-            }
-            window.addEventListener('resize', resize);
-            resize();
-
-            const points = [];
-            for (let i = 0; i < 6; i++) {
-                points.push({
-                    x: Math.random() * width,
-                    y: Math.random() * height,
-                    vx: (Math.random() - 0.5) * 0.3,
-                    vy: (Math.random() - 0.5) * 0.3,
-                    r: 120 + Math.random() * 80,
-                    g: 80 + Math.random() * 60,
-                    b: 140 + Math.random() * 80,
-                });
-            }
-
-            function draw() {
-                offset += 0.002;
-                ctx.clearRect(0, 0, width, height);
-                points.forEach(p => {
-                    p.x += p.vx * Math.sin(offset);
-                    p.y += p.vy * Math.cos(offset);
-                    if (p.x < 0 || p.x > width) p.vx *= -1;
-                    if (p.y < 0 || p.y > height) p.vy *= -1;
-                });
-                for (let i = 0; i < points.length; i++) {
-                    for (let j = i + 1; j < points.length; j++) {
-                        const dx = points[i].x - points[j].x;
-                        const dy = points[i].y - points[j].y;
-                        const dist = Math.sqrt(dx * dx + dy * dy);
-                        if (dist < 300) {
-                            const grad = ctx.createLinearGradient(points[i].x, points[i].y, points[j].x, points[j].y);
-                            grad.addColorStop(0, `rgba(${points[i].r},${points[i].g},${points[i].b},${0.08 - dist / 4000})`);
-                            grad.addColorStop(1, `rgba(${points[j].r},${points[j].g},${points[j].b},${0.08 - dist / 4000})`);
-                            ctx.beginPath();
-                            ctx.moveTo(points[i].x, points[i].y);
-                            ctx.lineTo(points[j].x, points[j].y);
-                            ctx.strokeStyle = grad;
-                            ctx.lineWidth = 1;
-                            ctx.stroke();
-                        }
-                    }
-                }
-                requestAnimationFrame(draw);
-            }
-            draw();
-        })();
-    </script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BDZXCQXQF"></script>
     <script>
