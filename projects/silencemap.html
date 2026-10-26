@@ -3,23 +3,29 @@
 <head>
      <!--Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            const f = d.getElementsByTagName(s)[0];
+            const j = d.createElement(s);
+            const dl = l !== 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NJJ58VB4');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="projects.silencemap.title_tag">SilenceMap | Andrii Cherepkov</title>
-    <link rel="icon" type="image/svg+xml" href="https://builder.aws.com/assets/builder-favicon-sq0js-4n.svg" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../js/vendor/tailwindcss-browser.min.js"></script>
 
+    <!--suppress HtmlDeprecatedAttribute -->
     <style type="text/tailwindcss">
         @theme {
             --color-editor-bg: #ffffff;
@@ -35,7 +41,7 @@
             body { @apply bg-editor-bg text-editor-ink font-inter antialiased selection:bg-accent selection:text-white; }
         }
         @layer utilities {
-            .serif { font-family: var(--font-serif); }
+            .serif { font-family: "Playfair Display", serif; }
             .premium-card { @apply relative overflow-hidden border border-editor-border/60 bg-white transition-all duration-500 ease-out hover:border-accent/30 hover:shadow-xl hover:shadow-black/5; }
             .text-balance { text-wrap: balance; }
         }
@@ -49,9 +55,10 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300" id="main-header">
         <nav class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-            <a href="../index.html" class="serif text-sm md:text-base font-black tracking-tighter hover:opacity-70 transition-opacity flex items-center group">
-                <span class="text-editor-ink font-black">andrii.ch</span><span class="text-editor-muted">@</span><span class="text-editor-muted">dev</span><span class="text-editor-ink">:</span><span class="ml-1">~$</span>
-                <span class="ml-2 text-editor-ink font-black">PHP/Laravel</span>
+            <a href="../index.html" class="flex items-center gap-2 group font-mono text-sm md:text-base hover:opacity-70 transition-opacity">
+                <span class="text-editor-ink font-black">andrii.ch</span><span class="text-editor-muted">@</span><span class="text-editor-muted">dev</span><span class="text-editor-ink">:</span><span class="text-accent ml-0.5">~$</span>
+                <span class="ml-2 text-editor-ink font-black tracking-tight">PHP/Laravel</span>
+                <span class="ml-1 w-1 h-4 bg-accent animate-pulse group-hover:bg-white"></span>
             </a>
             <a href="../index.html#projects" class="text-xs font-black uppercase tracking-widest text-editor-ink hover:text-accent transition-colors flex items-center gap-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
