@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NJJ58VB4');</script>
+     <!--Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NJJ58VB4');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,141 +17,145 @@
     <link rel="icon" type="image/svg+xml" href="https://builder.aws.com/assets/builder-favicon-sq0js-4n.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style type="text/tailwindcss">
         @theme {
-            --color-aws-bg: #0f172a;
-            --color-aws-card: #1e293b;
-            --color-aws-accent: #c280ff;
-            --color-aws-text: #f8fafc;
-            --color-aws-muted: #94a3b8;
+            --color-editor-bg: #ffffff;
+            --color-editor-surface: #fafafa;
+            --color-editor-border: #e5e5e5;
+            --color-editor-ink: #0a0a0a;
+            --color-editor-muted: #666666;
+            --color-accent: #0a0a0a;
             --font-inter: "Inter", sans-serif;
+            --font-serif: "Playfair Display", serif;
         }
         @layer base {
-            body { @apply bg-aws-bg text-aws-text font-inter antialiased; }
+            body { @apply bg-editor-bg text-editor-ink font-inter antialiased selection:bg-accent selection:text-white; }
         }
         @layer utilities {
-            .glass { @apply bg-white/5 backdrop-blur-md border border-white/10; }
+            .serif { font-family: var(--font-serif); }
+            .premium-card { @apply relative overflow-hidden border border-editor-border/60 bg-white transition-all duration-500 ease-out hover:border-accent/30 hover:shadow-xl hover:shadow-black/5; }
+            .text-balance { text-wrap: balance; }
         }
     </style>
 </head>
-<body class="selection:bg-aws-accent/30 selection:text-white">
+<body class="relative overflow-x-hidden">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJJ58VB4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 glass py-4" id="main-header">
-        <nav class="max-w-7xl mx-auto px-6 flex items-center justify-between">
-            <a href="../index.html" class="font-mono text-sm md:text-base tracking-tight hover:opacity-80 transition-opacity flex items-center group">
-                <span class="text-green-400 font-semibold">andrii.ch</span><span class="text-white">@</span><span class="text-blue-400">dev</span><span class="text-white">:</span><span class="text-aws-accent ml-1">~$</span>
-                <span class="ml-2 text-white font-black">PHP/Laravel</span>
-                <span class="ml-1 w-2 h-4 bg-aws-accent animate-pulse group-hover:bg-white"></span>
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300" id="main-header">
+        <nav class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+            <a href="../index.html" class="serif text-sm md:text-base font-black tracking-tighter hover:opacity-70 transition-opacity flex items-center group">
+                <span class="text-editor-ink font-black">andrii.ch</span><span class="text-editor-muted">@</span><span class="text-editor-muted">dev</span><span class="text-editor-ink">:</span><span class="ml-1">~$</span>
+                <span class="ml-2 text-editor-ink font-black">PHP/Laravel</span>
             </a>
-            <a href="../index.html#projects" class="text-sm font-black uppercase tracking-widest text-aws-muted hover:text-aws-accent transition-colors flex items-center gap-2">
+            <a href="../index.html#projects" class="text-xs font-black uppercase tracking-widest text-editor-ink hover:text-accent transition-colors flex items-center gap-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
                 <span data-i18n="projects.back">Back to Projects</span>
             </a>
-            <div class="hidden md:flex items-center gap-1 ml-4 border-l border-white/10 pl-4">
-                <button data-lang-btn="en" class="text-xs font-bold text-aws-muted hover:text-aws-accent transition-colors px-1">EN</button>
-                <span class="text-white/20 text-xs">|</span>
-                <button data-lang-btn="pl" class="text-xs font-bold text-aws-muted hover:text-aws-accent transition-colors px-1">PL</button>
-                <span class="text-white/20 text-xs">|</span>
-                <button data-lang-btn="uk" class="text-xs font-bold text-aws-muted hover:text-aws-accent transition-colors px-1">UA</button>
+            <div class="hidden md:flex items-center gap-1 ml-4 border-l border-editor-border/50 pl-4">
+                <button data-lang-btn="en" class="text-xs font-black text-editor-muted hover:text-accent transition-colors px-1">EN</button>
+                <span class="text-editor-muted/30 text-xs">|</span>
+                <button data-lang-btn="pl" class="text-xs font-black text-editor-muted hover:text-accent transition-colors px-1">PL</button>
+                <span class="text-editor-muted/30 text-xs">|</span>
+                <button data-lang-btn="uk" class="text-xs font-black text-editor-muted hover:text-accent transition-colors px-1">UA</button>
             </div>
         </nav>
     </header>
 
-    <main class="pt-32 pb-40">
+    <main class="pt-36 pb-40">
         <section class="max-w-5xl mx-auto px-6">
             <!-- Hero -->
-            <div class="mb-20">
-                <span data-i18n="projects.special.badge" class="inline-block px-4 py-1.5 bg-aws-accent/10 text-aws-accent text-xs font-black rounded-full border border-aws-accent/20 mb-6 uppercase tracking-widest">
+            <div class="mb-24">
+                <span data-i18n="projects.special.badge" class="inline-block px-4 py-1.5 bg-accent/5 text-accent text-xs font-black rounded-full border border-accent/10 mb-8 uppercase tracking-[0.6em]">
                     EdTech & E-Learning
                 </span>
-                <h1 data-i18n-html="projects.special.title" class="text-5xl md:text-7xl font-black mb-8 tracking-tight leading-tight">
-                    Special Learning <br> <span class="bg-gradient-to-r from-orange-400 to-aws-accent bg-clip-text text-transparent">Educational Ecosystem</span>
+                <h1 data-i18n-html="projects.special.title" class="serif text-5xl md:text-7xl font-black leading-[1.05] mb-10 italic text-balance">
+                    Special Learning <br> <span class="text-accent italic">Educational Ecosystem</span>
                 </h1>
-                <p data-i18n="projects.special.desc" class="text-xl text-aws-muted max-w-3xl leading-relaxed">
+                <p data-i18n="projects.special.desc" class="text-lg text-editor-muted max-w-xl leading-relaxed text-balance">
                     A multi-domain educational platform built on the Kohana framework, featuring advanced video libraries, course testing, and personalized curricula for specialists.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-16">
-                <div class="md:col-span-2 space-y-12">
-                    <div class="glass p-10 rounded-[2.5rem]">
-                        <h2 data-i18n="projects.special.section1" class="text-2xl font-black mb-6 flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-aws-accent/20 flex items-center justify-center text-aws-accent text-sm">01</span>
+            <!-- Project Details -->
+            <div class="grid lg:grid-cols-3 gap-20">
+                <div class="lg:col-span-2 space-y-16">
+                    <div class="premium-card p-10 md:p-12">
+                        <h2 data-i18n="projects.special.section1" class="text-2xl md:text-3xl font-black mb-8 flex items-center gap-4 italic serif">
+                            <span class="w-10 h-10 rounded-xl bg-accent/5 flex items-center justify-center border border-accent/10 text-accent text-xs font-black">01</span>
                             My Contributions
                         </h2>
-                        <div class="space-y-6 text-aws-muted leading-relaxed">
+                        <div class="space-y-8 text-editor-muted leading-relaxed">
                             <p data-i18n="projects.special.intro">As a **Full Stack PHP Developer**, I led the modernization and feature expansion of the existing Kohana-based platform.</p>
-                            <ul class="space-y-4">
+                            <ul class="space-y-6">
                                 <li class="flex gap-4">
-                                    <span class="text-aws-accent font-bold mt-1">✔</span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-accent mt-1 shrink-0"></span>
                                     <span data-i18n="projects.special.li1">**Redesign Integration**: Led the complete UI overhaul across the main website, store, and internal educational system.</span>
                                 </li>
                                 <li class="flex gap-4">
-                                    <span class="text-aws-accent font-bold mt-1">✔</span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-accent mt-1 shrink-0"></span>
                                     <span data-i18n="projects.special.li2">**Video CE Library**: Developed a "Build Your Own Video-based CE Library" component, allowing users to customize their educational paths.</span>
                                 </li>
                                 <li class="flex gap-4">
-                                    <span class="text-aws-accent font-bold mt-1">✔</span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-accent mt-1 shrink-0"></span>
                                     <span data-i18n="projects.special.li3">**SSO & Testing**: Implemented Single Sign-On (SSO) and a high-security automated course testing and certification system.</span>
                                 </li>
                                 <li class="flex gap-4">
-                                    <span class="text-aws-accent font-bold mt-1">✔</span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-accent mt-1 shrink-0"></span>
                                     <span data-i18n="projects.special.li4">**Admin Optimization**: Modified and optimized the administrative panel to handle complex content management across multiple domains.</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="glass p-10 rounded-[2.5rem]">
-                        <h2 data-i18n="projects.special.section2" class="text-2xl font-black mb-6 flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-aws-accent/20 flex items-center justify-center text-aws-accent text-sm">02</span>
+                    <div class="premium-card p-10 md:p-12">
+                        <h2 data-i18n="projects.special.section2" class="text-2xl md:text-3xl font-black mb-8 flex items-center gap-4 italic serif">
+                            <span class="w-10 h-10 rounded-xl bg-accent/5 flex items-center justify-center border border-accent/10 text-accent text-xs font-black">02</span>
                             Platform Evolution
                         </h2>
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
-                                <h4 data-i18n="projects.special.feature1_title" class="font-black text-white mb-2">Personalized Curricula</h4>
-                                <p data-i18n="projects.special.feature1_desc" class="text-sm text-aws-muted">Logic for generating unique learning paths based on user history and goals.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-editor-surface p-6 rounded-xl border border-editor-border">
+                                <h4 data-i18n="projects.special.feature1_title" class="font-black text-editor-ink mb-3">Personalized Curricula</h4>
+                                <p data-i18n="projects.special.feature1_desc" class="text-sm text-editor-muted">Logic for generating unique learning paths based on user history and goals.</p>
                             </div>
-                            <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
-                                <h4 data-i18n="projects.special.feature2_title" class="font-black text-white mb-2">Video-based CE</h4>
-                                <p data-i18n="projects.special.feature2_desc" class="text-sm text-aws-muted">Seamless integration of video content into the Continuing Education certificate workflow.</p>
+                            <div class="bg-editor-surface p-6 rounded-xl border border-editor-border">
+                                <h4 data-i18n="projects.special.feature2_title" class="font-black text-editor-ink mb-3">Video-based CE</h4>
+                                <p data-i18n="projects.special.feature2_desc" class="text-sm text-editor-muted">Seamless integration of video content into the Continuing Education certificate workflow.</p>
                             </div>
-                            <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
-                                <h4 data-i18n="projects.special.feature3_title" class="font-black text-white mb-2">Domain Templates</h4>
-                                <p data-i18n="projects.special.feature3_desc" class="text-sm text-aws-muted">A template system that allowed the platform to be skinned for different educational domains.</p>
+                            <div class="bg-editor-surface p-6 rounded-xl border border-editor-border">
+                                <h4 data-i18n="projects.special.feature3_title" class="font-black text-editor-ink mb-3">Domain Templates</h4>
+                                <p data-i18n="projects.special.feature3_desc" class="text-sm text-editor-muted">A template system that allowed the platform to be skinned for different educational domains.</p>
                             </div>
-                            <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
-                                <h4 data-i18n="projects.special.feature4_title" class="font-black text-white mb-2">Interactive Feedback</h4>
-                                <p data-i18n="projects.special.feature4_desc" class="text-sm text-aws-muted">Component for users to leave structured feedback about educational materials and videos.</p>
+                            <div class="bg-editor-surface p-6 rounded-xl border border-editor-border">
+                                <h4 data-i18n="projects.special.feature4_title" class="font-black text-editor-ink mb-3">Interactive Feedback</h4>
+                                <p data-i18n="projects.special.feature4_desc" class="text-sm text-editor-muted">Component for users to leave structured feedback about educational materials and videos.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-8">
-                    <div class="glass p-8 rounded-[2rem]">
-                        <h3 data-i18n="projects.tech_stack" class="text-xs font-black uppercase tracking-[0.2em] text-aws-accent mb-6">Tech Stack</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-white/5 px-3 py-1 rounded-lg text-[11px] font-bold border border-white/10 uppercase">PHP / Kohana</span>
-                            <span class="bg-white/5 px-3 py-1 rounded-lg text-[11px] font-bold border border-white/10 uppercase">JQuery</span>
-                            <span class="bg-white/5 px-3 py-1 rounded-lg text-[11px] font-bold border border-white/10 uppercase">MySQL</span>
-                            <span class="bg-white/5 px-3 py-1 rounded-lg text-[11px] font-bold border border-white/10 uppercase">CSS 3</span>
-                            <span class="bg-white/5 px-3 py-1 rounded-lg text-[11px] font-bold border border-white/10 uppercase">HTML 5</span>
+                <div class="space-y-10">
+                    <div class="premium-card p-8">
+                        <h3 data-i18n="projects.tech_stack" class="text-[10px] font-black text-editor-muted/30 uppercase tracking-[0.6em] mb-6 text-accent">Tech Stack</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1.5 bg-editor-surface rounded-lg text-xs font-bold text-editor-muted border border-editor-border uppercase">PHP / Kohana</span>
+                            <span class="px-3 py-1.5 bg-editor-surface rounded-lg text-xs font-bold text-editor-muted border border-editor-border uppercase">JQuery</span>
+                            <span class="px-3 py-1.5 bg-editor-surface rounded-lg text-xs font-bold text-editor-muted border border-editor-border uppercase">MySQL</span>
+                            <span class="px-3 py-1.5 bg-editor-surface rounded-lg text-xs font-bold text-editor-muted border border-editor-border uppercase">CSS 3</span>
+                            <span class="px-3 py-1.5 bg-editor-surface rounded-lg text-xs font-bold text-editor-muted border border-editor-border uppercase">HTML 5</span>
                         </div>
                     </div>
 
-                    <div class="glass p-8 rounded-[2rem]">
-                        <h3 data-i18n="projects.live_link" class="text-xs font-black uppercase tracking-[0.2em] text-aws-accent mb-6">Live Link</h3>
-                        <a href="https://special-learning.com/" target="_blank" class="w-full inline-flex items-center justify-center gap-3 py-4 bg-aws-accent text-aws-bg rounded-2xl font-black hover:brightness-110 transition-all shadow-lg shadow-aws-accent/20">
-                            <span data-i18n="projects.special.visit">Visit special-learning.com</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    <div class="premium-card p-8">
+                        <h3 data-i18n="projects.live_link" class="text-[10px] font-black text-editor-muted/30 uppercase tracking-[0.6em] mb-6 text-accent">Live Link</h3>
+                        <a href="https://special-learning.com/" target="_blank" rel="noopener noreferrer" class="group/link flex w-full items-center gap-3 px-5 py-4 bg-accent text-white rounded-2xl font-black hover:bg-editor-ink transition-all shadow-lg shadow-black/10">
+                            <span data-i18n="projects.special.visit" class="min-w-0 flex-1 text-left text-sm leading-snug break-words">Visit special-learning.com</span>
+                            <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                         </a>
                     </div>
                 </div>
@@ -156,15 +163,15 @@
         </section>
     </main>
 
-    <footer class="py-20 bg-black/40 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p data-i18n="projects.special.footer" class="text-aws-muted font-bold tracking-widest text-xs uppercase mb-8">
+    <footer class="py-20 bg-white border-t border-editor-border/50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p data-i18n="projects.special.footer" class="text-editor-muted font-medium tracking-widest text-[11px] uppercase mb-8">
                 &copy; 2024 Andrii Cherepkov. EdTech Specialist.
             </p>
-            <div class="flex justify-center gap-10">
-                <a href="../index.html" class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors" data-i18n="footer.home">Home</a>
-                <a href="../index.html#projects" class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors" data-i18n="footer.projects">Projects</a>
-                <a href="mailto:andrii.cherepkov@gmail.com" class="text-xs font-black uppercase tracking-widest hover:text-aws-accent transition-colors" data-i18n="footer.contact">Contact</a>
+            <div class="flex justify-center gap-8">
+                <a href="../index.html" class="text-xs font-black uppercase tracking-widest text-editor-ink hover:text-accent transition-colors" data-i18n="footer.home">Home</a>
+                <a href="../index.html#projects" class="text-xs font-black uppercase tracking-widest text-editor-ink hover:text-accent transition-colors" data-i18n="footer.projects">Projects</a>
+                <a href="mailto:andrii.cherepkov@gmail.com" class="text-xs font-black uppercase tracking-widest text-editor-ink hover:text-accent transition-colors" data-i18n="footer.contact">Contact</a>
             </div>
         </div>
     </footer>
@@ -172,11 +179,10 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BDZXCQXQF"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-7BDZXCQXQF');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7BDZXCQXQF');
     </script>
     <script src="../js/i18n.js"></script>
 </body>
