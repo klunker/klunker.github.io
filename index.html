@@ -1468,8 +1468,8 @@
                 <!-- Project 01 -->
                 <article
                         class="interact-card group relative py-16 md:py-24 px-8 md:px-12 bg-white border border-editor-border rounded-2xl overflow-hidden transition-all duration-500 hover:border-accent/30 hover:shadow-xl hover:shadow-black/5">
-                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-28">
-                        <div class="flex items-center gap-10 shrink-0">
+                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-start lg:gap-8">
+                        <div class="flex items-center gap-10 shrink-0 lg:w-[22%]">
                                 <span
                                         class="text-6xl md:text-8xl font-black text-editor-muted/5 group-hover:text-accent/10 transition-colors duration-500">01</span>
                             <div
@@ -1481,40 +1481,43 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="flex-grow">
-                            <div class="flex flex-wrap gap-2 mb-8">
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-8">
                                     <span
                                             class="px-3 py-1 bg-indigo-50 rounded-full text-[10px] font-bold text-indigo-700 uppercase tracking-widest border border-indigo-100">Laravel</span>
-                                <span
-                                        class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">Stripe</span>
-                                <span
-                                        class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">Livewire</span>
-                            </div>
-                            <h3 class="text-4xl md:text-6xl font-black text-editor-ink mb-8 tracking-tight text-balance"
-                                data-i18n="projects.project1.title">SaaS
-                                Accounting
-                                Platform</h3>
-                            <p class="text-lg text-editor-muted max-w-xl group-hover:text-editor-ink transition-colors leading-relaxed"
-                               data-i18n="projects.project1.desc">
-                                Full-cycle automation of subscription management, client workflows, and advanced
-                                billing cycles with deep Stripe API integration.</p>
-                        </div>
-                        <div
-                                class="flex items-center justify-between lg:flex-col lg:items-end gap-8 border-t border-editor-border/50 lg:border-t-0 pt-12 lg:pt-0">
-                                <span
-                                        class="text-xs font-black text-editor-muted uppercase tracking-[0.6em]"
-                                        data-i18n="projects.enterprise">Enterprise</span>
-                            <a href="projects/accountant.html"
-                               class="group/btn interact-btn relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-accent text-white flex items-center justify-center overflow-hidden hover:scale-105 transition-transform shadow-lg shadow-black/10">
-                                <div
-                                        class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                    <span
+                                            class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">Stripe</span>
+                                    <span
+                                            class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">Livewire</span>
                                 </div>
-                                <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-indigo-500 transition-colors"
-                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </a>
+                                <h3 class="text-4xl md:text-6xl font-black text-editor-ink mb-8 tracking-tight text-balance"
+                                    data-i18n="projects.project1.title">SaaS
+                                    Accounting
+                                    Platform</h3>
+                                <p class="text-lg text-editor-muted max-w-xl group-hover:text-editor-ink transition-colors leading-relaxed"
+                                   data-i18n="projects.project1.desc">
+                                    Full-cycle automation of subscription management, client workflows, and advanced
+                                    billing cycles with deep Stripe API integration.</p>
+                            </div>
+                            <div class="mt-auto pt-8 border-t border-editor-border/50">
+                                <div class="flex items-center justify-between gap-4">
+                                    <span
+                                            class="text-xs font-black text-editor-muted uppercase tracking-[0.6em]"
+                                            data-i18n="projects.enterprise">Enterprise</span>
+                                    <a href="projects/accountant.html"
+                                       class="group/btn interact-btn relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-accent text-white flex items-center justify-center overflow-hidden hover:scale-105 transition-transform shadow-lg shadow-black/10">
+                                        <div
+                                                class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                        </div>
+                                        <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-indigo-500 transition-colors"
+                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -1522,8 +1525,8 @@
                 <!-- Project 02 -->
                 <article
                         class="interact-card group relative py-16 md:py-24 px-8 md:px-12 bg-white border border-editor-border rounded-2xl overflow-hidden transition-all duration-500 hover:border-green-600/30 hover:shadow-xl hover:shadow-black/5">
-                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-28">
-                        <div class="flex items-center gap-10 shrink-0">
+                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-start lg:gap-8">
+                        <div class="flex items-center gap-10 shrink-0 lg:w-[22%]">
                                 <span
                                         class="text-6xl md:text-8xl font-black text-editor-muted/5 group-hover:text-green-600/10 transition-colors duration-500">02</span>
                             <div
@@ -1535,41 +1538,44 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="flex-grow">
-                            <div class="flex flex-wrap gap-2 mb-8">
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-8">
                                     <span
                                             class="px-3 py-1 bg-green-50 rounded-full text-[10px] font-bold text-green-700 uppercase tracking-widest border border-green-100">Laravel</span>
-                                <span
-                                        class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">React.js</span>
-                                <span
-                                        class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">MySQL</span>
-                            </div>
-                            <h3 class="text-4xl md:text-6xl font-black text-editor-ink mb-8 tracking-tight text-balance"
-                                data-i18n="projects.project2.title">Bawidełka
-                            </h3>
-                            <p class="text-lg text-editor-muted max-w-xl group-hover:text-editor-ink transition-colors leading-relaxed"
-                               data-i18n="projects.project2.desc">
-                                Bawidełka is a creative space for children, founded in Opole in 2021 by Anita Kołek. The
-                                company focuses on fostering children's creativity, learning through experience, and
-                                organizing leisure activities.
-                            </p>
-                        </div>
-                        <div
-                                class="flex items-center justify-between lg:flex-col lg:items-end gap-8 border-t border-editor-border/50 lg:border-t-0 pt-12 lg:pt-0">
-                                <span
-                                        class="text-xs font-black text-editor-muted uppercase tracking-[0.6em] text-right"
-                                        data-i18n="projects.corporate">Corporate Website</span>
-                            <a href="projects/bawidelka.html"
-                               class="group/btn relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-green-600 text-white flex items-center justify-center overflow-hidden hover:scale-105 transition-transform shadow-lg shadow-black/10">
-                                <div
-                                        class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                    <span
+                                            class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">React.js</span>
+                                    <span
+                                            class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">MySQL</span>
                                 </div>
-                                <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-green-400 transition-colors"
-                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </a>
+                                <h3 class="text-4xl md:text-6xl font-black text-editor-ink mb-8 tracking-tight text-balance"
+                                    data-i18n="projects.project2.title">Bawidełka
+                                </h3>
+                                <p class="text-lg text-editor-muted max-w-xl group-hover:text-editor-ink transition-colors leading-relaxed"
+                                   data-i18n="projects.project2.desc">
+                                    Bawidełka is a creative space for children, founded in Opole in 2021 by Anita Kołek. The
+                                    company focuses on fostering children's creativity, learning through experience, and
+                                    organizing leisure activities.
+                                </p>
+                            </div>
+                            <div class="mt-auto pt-8 border-t border-editor-border/50">
+                                <div class="flex items-center justify-between gap-4">
+                                    <span
+                                            class="text-xs font-black text-editor-muted uppercase tracking-[0.6em]"
+                                            data-i18n="projects.corporate">Corporate Website</span>
+                                    <a href="projects/bawidelka.html"
+                                       class="group/btn relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-green-600 text-white flex items-center justify-center overflow-hidden hover:scale-105 transition-transform shadow-lg shadow-black/10">
+                                        <div
+                                                class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                        </div>
+                                        <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-green-400 transition-colors"
+                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -1577,8 +1583,8 @@
                 <!-- Project 03 -->
                 <article
                         class="interact-card group relative py-16 md:py-24 px-8 md:px-12 bg-white border border-editor-border rounded-2xl overflow-hidden transition-all duration-500 hover:border-accent/30 hover:shadow-xl hover:shadow-black/5">
-                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-28">
-                        <div class="flex items-center gap-10 shrink-0">
+                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-start lg:gap-8">
+                        <div class="flex items-center gap-10 shrink-0 lg:w-[22%]">
                                 <span
                                         class="text-6xl md:text-8xl font-black text-editor-muted/5 group-hover:text-accent/10 transition-colors duration-500">03</span>
                             <div
@@ -1590,41 +1596,44 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="flex-grow">
-                            <div class="flex flex-wrap gap-2 mb-8">
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-8">
                                     <span
                                             class="px-3 py-1 bg-black/5 rounded-full text-[10px] font-bold text-editor-ink uppercase tracking-widest border border-editor-border/50">TypeScript</span>
-                                <span
-                                        class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">Vite</span>
-                                <span
-                                        class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">MV3</span>
-                            </div>
-                            <h3 class="text-4xl md:text-6xl font-black text-editor-ink mb-8 tracking-tight text-balance"
-                                data-i18n="projects.project3.title">
-                                AutoFill Pro
-                            </h3>
-                            <p class="text-lg text-editor-muted max-w-xl group-hover:text-editor-ink transition-colors leading-relaxed"
-                               data-i18n="projects.project3.desc">
-                                A
-                                modern, privacy-focused extension for intelligent form automation. Securely manages
-                                data locally and matches aliases with extreme precision.</p>
-                        </div>
-                        <div
-                                class="flex items-center justify-between lg:flex-col lg:items-end gap-8 border-t border-editor-border/50 lg:border-t-0 pt-12 lg:pt-0">
-                                <span
-                                        class="text-xs font-black text-editor-muted uppercase tracking-[0.6em]"
-                                        data-i18n="projects.productivity">Productivity</span>
-                            <a href="projects/autofill-pro.html"
-                               class="group/btn interact-btn relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-accent text-white flex items-center justify-center overflow-hidden hover:scale-105 transition-transform shadow-lg shadow-black/10">
-                                <div
-                                        class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                    <span
+                                            class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">Vite</span>
+                                    <span
+                                            class="px-3 py-1 bg-white rounded-full text-[10px] font-bold text-editor-muted uppercase tracking-widest border border-editor-border">MV3</span>
                                 </div>
-                                <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-indigo-400 transition-colors"
-                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </a>
+                                <h3 class="text-4xl md:text-6xl font-black text-editor-ink mb-8 tracking-tight text-balance"
+                                    data-i18n="projects.project3.title">
+                                    AutoFill Pro
+                                </h3>
+                                <p class="text-lg text-editor-muted max-w-xl group-hover:text-editor-ink transition-colors leading-relaxed"
+                                   data-i18n="projects.project3.desc">
+                                    A
+                                    modern, privacy-focused extension for intelligent form automation. Securely manages
+                                    data locally and matches aliases with extreme precision.</p>
+                            </div>
+                            <div class="mt-auto pt-8 border-t border-editor-border/50">
+                                <div class="flex items-center justify-between gap-4">
+                                    <span
+                                            class="text-xs font-black text-editor-muted uppercase tracking-[0.6em]"
+                                            data-i18n="projects.productivity">Productivity</span>
+                                    <a href="projects/autofill-pro.html"
+                                       class="group/btn interact-btn relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-accent text-white flex items-center justify-center overflow-hidden hover:scale-105 transition-transform shadow-lg shadow-black/10">
+                                        <div
+                                                class="absolute inset-0 bg-white translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300">
+                                        </div>
+                                        <svg class="relative z-10 w-6 h-6 md:w-8 md:h-8 group-hover/btn:text-indigo-400 transition-colors"
+                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
